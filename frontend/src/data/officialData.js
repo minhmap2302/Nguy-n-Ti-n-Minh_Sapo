@@ -1,0 +1,3291 @@
+// Auto-generated from backend/src/main/resources/seed-data.json
+// Dữ liệu mặc định cho frontend khi backend chưa bật.
+
+export const defaultState = {
+  "storeInfo": {
+    "name": "Befine Life - Hà Đông",
+    "owner": "Mai Befine",
+    "phone": "098 693 46 41",
+    "email": "befinelife.contact@gmail.com",
+    "address": "158 Thanh Bình, Hà Đông, Hà Nội",
+    "plan": "BefineSaaS",
+    "taxCode": "0109998888",
+    "currency": "VND",
+    "openingHours": "08:30 - 17:30",
+    "website": "https://befine.vn",
+    "branchAddress": "35 ngõ 259/9 Phố Vọng, Hai Bà Trưng, Hà Nội",
+    "sourceArea": "Thạch Thành, Thanh Hóa; Bến Tre; Bình Thuận",
+    "slogan": "Sản phẩm thiên nhiên - sống xanh - vận hành tử tế",
+    "deployment": "online",
+    "database": "MySQL production",
+    "note": "BefineSaaS dùng MySQL, JWT, giao diện hiện đại, Dark Mode, VI/EN, responsive và bộ chức năng vận hành hợp kênh."
+  },
+  "warehouses": [
+    {
+      "id": "WH01",
+      "name": "Kho Hà Đông",
+      "address": "158 Thanh Bình, Hà Đông",
+      "manager": "Lê Hoàng Nam",
+      "status": "active"
+    },
+    {
+      "id": "WH02",
+      "name": "Kho Phố Vọng",
+      "address": "Phố Vọng, Hai Bà Trưng",
+      "manager": "Phạm Thùy Linh",
+      "status": "active"
+    },
+    {
+      "id": "WH03",
+      "name": "Kho Online",
+      "address": "Khu đóng gói TMĐT",
+      "manager": "Trần Minh Khoa",
+      "status": "active"
+    }
+  ],
+  "channels": [
+    {
+      "id": "CH01",
+      "name": "POS cửa hàng",
+      "type": "offline",
+      "status": "connected",
+      "revenue": 189500000,
+      "orders": 438,
+      "sync": "Realtime",
+      "icon": "store"
+    },
+    {
+      "id": "CH02",
+      "name": "Website Befine.vn",
+      "type": "website",
+      "status": "connected",
+      "revenue": 78400000,
+      "orders": 162,
+      "sync": "5 phút trước",
+      "icon": "globe",
+      "url": "https://befine.vn",
+      "apiProvider": "befine.vn",
+      "apiStatus": "manual",
+      "syncDirection": "manual",
+      "notes": "Kênh website bán hàng chính thức của Befine. Quản lý đơn, khách, sản phẩm và khuyến mãi nội bộ trước khi kết nối API thật."
+    },
+    {
+      "id": "CH03",
+      "name": "Shopee Befine Life",
+      "type": "marketplace",
+      "status": "connected",
+      "revenue": 64500000,
+      "orders": 208,
+      "sync": "12 phút trước",
+      "icon": "smartphone"
+    },
+    {
+      "id": "CH04",
+      "name": "Facebook/Instagram",
+      "type": "social",
+      "status": "pending",
+      "revenue": 22600000,
+      "orders": 47,
+      "sync": "Chờ cấu hình",
+      "icon": "share"
+    },
+    {
+      "id": "CH05",
+      "name": "TikTok Shop Befine",
+      "type": "marketplace",
+      "status": "connected",
+      "revenue": 38500000,
+      "orders": 96,
+      "sync": "Realtime API",
+      "icon": "video"
+    },
+    {
+      "id": "CH06",
+      "name": "Threads Befine Life",
+      "type": "social",
+      "status": "connected",
+      "revenue": 12800000,
+      "orders": 31,
+      "sync": "Manual daily",
+      "icon": "message-circle"
+    },
+    {
+      "id": "CH07",
+      "name": "Đại lý/NPP toàn quốc",
+      "type": "wholesale",
+      "status": "connected",
+      "revenue": 154000000,
+      "orders": 22,
+      "sync": "Theo đơn sỉ",
+      "icon": "truck"
+    }
+  ],
+  "products": [
+    {
+      "id": "P001",
+      "name": "Tinh dầu sả chanh Befine 10ml",
+      "sku": "TD-SC-010",
+      "barcode": "893850120001",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 89000,
+      "cost": 42000,
+      "stock": 84,
+      "minStock": 20,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P001.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Tinh dầu thiên nhiên dùng xông phòng, khử mùi và tạo cảm giác thư giãn."
+    },
+    {
+      "id": "P002",
+      "name": "Tinh dầu bạc hà Befine 10ml",
+      "sku": "TD-BH-010",
+      "barcode": "893850120002",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 95000,
+      "cost": 45000,
+      "stock": 39,
+      "minStock": 15,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P002.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Mùi bạc hà mát, phù hợp xông phòng, hỗ trợ không gian tỉnh táo."
+    },
+    {
+      "id": "P003",
+      "name": "Tinh dầu tràm gió Bekids 30ml",
+      "sku": "BK-TG-030",
+      "barcode": "893850120003",
+      "category": "Mẹ & bé",
+      "brand": "Bekids",
+      "price": 159000,
+      "cost": 72000,
+      "stock": 28,
+      "minStock": 18,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P003.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Dòng tràm xoa dùng cho gia đình, mùi ấm, dễ sử dụng."
+    },
+    {
+      "id": "P004",
+      "name": "Sáp giữ ấm Bekids 0M+ 20g",
+      "sku": "BK-SGA-020",
+      "barcode": "893850120004",
+      "category": "Mẹ & bé",
+      "brand": "Bekids",
+      "price": 125000,
+      "cost": 56000,
+      "stock": 8,
+      "minStock": 20,
+      "warehouse": "Kho Online",
+      "status": "low_stock",
+      "image": "/uploads/products/seed/P004.jpg",
+      "channel": [
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Sáp xoa giữ ấm dạng nhỏ gọn, tiện mang theo."
+    },
+    {
+      "id": "P005",
+      "name": "Toner tía tô Befine 100ml",
+      "sku": "SK-TTT-100",
+      "barcode": "893850120005",
+      "category": "Chăm sóc da",
+      "brand": "Befine",
+      "price": 150000,
+      "cost": 69000,
+      "stock": 0,
+      "minStock": 12,
+      "warehouse": "Kho Hà Đông",
+      "status": "out_of_stock",
+      "image": "/uploads/products/seed/P005.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Toner tía tô cho da dầu, da dễ bí tắc."
+    },
+    {
+      "id": "P006",
+      "name": "Dầu dừa phân đoạn Befine 100ml",
+      "sku": "SK-DDP-100",
+      "barcode": "893850120006",
+      "category": "Chăm sóc da",
+      "brand": "Befine",
+      "price": 135000,
+      "cost": 52000,
+      "stock": 33,
+      "minStock": 15,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P006.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Dầu nền mỏng nhẹ dùng dưỡng tóc, massage và chăm sóc da."
+    },
+    {
+      "id": "P007",
+      "name": "Xà bông gừng quế Befine Green",
+      "sku": "XB-GQ-090",
+      "barcode": "893850120007",
+      "category": "Xà bông",
+      "brand": "Befine Green",
+      "price": 69000,
+      "cost": 31000,
+      "stock": 52,
+      "minStock": 20,
+      "warehouse": "Kho Phố Vọng",
+      "status": "active",
+      "image": "/uploads/products/seed/P007.jpg",
+      "channel": [
+        "POS",
+        "Shopee",
+        "Website Befine.vn"
+      ],
+      "description": "Xà bông thủ công mùi gừng quế ấm, dùng hằng ngày."
+    },
+    {
+      "id": "P008",
+      "name": "Bánh rong biển kẹp hạt 200g",
+      "sku": "BF-RB-200",
+      "barcode": "893850120008",
+      "category": "Befine Foods",
+      "brand": "Befine Foods",
+      "price": 99000,
+      "cost": 53000,
+      "stock": 43,
+      "minStock": 18,
+      "warehouse": "Kho Online",
+      "status": "active",
+      "image": "/uploads/products/seed/P008.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Snack hạt dùng mật dừa nước, phù hợp ăn vặt lành mạnh."
+    },
+    {
+      "id": "P009",
+      "name": "Gạo lứt chà bông Befine 200g",
+      "sku": "BF-GLCB-200",
+      "barcode": "893850120009",
+      "category": "Befine Foods",
+      "brand": "Befine Foods",
+      "price": 89000,
+      "cost": 47000,
+      "stock": 12,
+      "minStock": 20,
+      "warehouse": "Kho Online",
+      "status": "low_stock",
+      "image": "/uploads/products/seed/P009.jpg",
+      "channel": [
+        "POS",
+        "Shopee",
+        "Website Befine.vn"
+      ],
+      "description": "Gạo lứt giòn kèm chà bông, tiện mang theo khi đi học, đi làm."
+    },
+    {
+      "id": "P010",
+      "name": "Đũa buông Bình Thuận 10 đôi",
+      "sku": "TC-DB-010",
+      "barcode": "893850120010",
+      "category": "Thủ công xanh",
+      "brand": "Làng nghề",
+      "price": 85000,
+      "cost": 39000,
+      "stock": 66,
+      "minStock": 25,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P010.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Đũa buông mộc, không sơn phủ, phù hợp gian bếp sống xanh."
+    },
+    {
+      "id": "P011",
+      "name": "Xơ mướp rửa bát oval",
+      "sku": "TC-XM-OVL",
+      "barcode": "893850120011",
+      "category": "Thủ công xanh",
+      "brand": "Làng nghề",
+      "price": 19000,
+      "cost": 8500,
+      "stock": 145,
+      "minStock": 50,
+      "warehouse": "Kho Phố Vọng",
+      "status": "active",
+      "image": "/uploads/products/seed/P011.png",
+      "channel": [
+        "POS",
+        "Shopee"
+      ],
+      "description": "Xơ mướp ép phẳng dùng rửa bát, tắm và vệ sinh đồ dùng."
+    },
+    {
+      "id": "P012",
+      "name": "Bát gáo dừa decor 10-13cm",
+      "sku": "TC-BGD-013",
+      "barcode": "893850120012",
+      "category": "Thủ công xanh",
+      "brand": "Làng nghề",
+      "price": 79000,
+      "cost": 36000,
+      "stock": 6,
+      "minStock": 15,
+      "warehouse": "Kho Phố Vọng",
+      "status": "low_stock",
+      "image": "/uploads/products/seed/P012.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Bát gáo dừa thủ công dùng decor, trộn mặt nạ, chụp ảnh sản phẩm."
+    },
+    {
+      "id": "P013",
+      "name": "Tinh dầu gừng Befine 10ml",
+      "sku": "TD-GUNG-010",
+      "barcode": "893850120013",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 99000,
+      "cost": 46000,
+      "stock": 31,
+      "minStock": 12,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P013.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Mùi gừng ấm, phù hợp xông phòng, massage thư giãn và dùng trong những ngày lạnh."
+    },
+    {
+      "id": "P014",
+      "name": "Tinh dầu khuynh diệp Befine 10ml",
+      "sku": "TD-KD-010",
+      "barcode": "893850120014",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 95000,
+      "cost": 45000,
+      "stock": 26,
+      "minStock": 12,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P014.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Hương khuynh diệp sạch, tạo cảm giác dễ thở và thoáng phòng."
+    },
+    {
+      "id": "P015",
+      "name": "Tinh dầu ngọc am Befine 10ml",
+      "sku": "TD-NA-010",
+      "barcode": "893850120015",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 189000,
+      "cost": 98000,
+      "stock": 14,
+      "minStock": 8,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P015.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Mùi gỗ ngọc am trầm, phù hợp xông không gian làm việc, thiền và thư giãn."
+    },
+    {
+      "id": "P016",
+      "name": "Tinh dầu cam ngọt Befine 10ml",
+      "sku": "TD-CAM-010",
+      "barcode": "893850120016",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 89000,
+      "cost": 42000,
+      "stock": 44,
+      "minStock": 15,
+      "warehouse": "Kho Online",
+      "status": "active",
+      "image": "/uploads/products/seed/P016.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Mùi cam ngọt tươi vui, dùng xông phòng, treo xe, tạo cảm giác dễ chịu."
+    },
+    {
+      "id": "P017",
+      "name": "Tinh dầu quýt Befine 10ml",
+      "sku": "TD-QUYT-010",
+      "barcode": "893850120017",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 89000,
+      "cost": 42000,
+      "stock": 37,
+      "minStock": 15,
+      "warehouse": "Kho Online",
+      "status": "active",
+      "image": "/uploads/products/seed/P017.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Hương quýt nhẹ nhàng, phù hợp phòng ngủ, xe hơi và không gian nhỏ."
+    },
+    {
+      "id": "P018",
+      "name": "Tinh dầu bưởi Befine 10ml",
+      "sku": "TD-BUOI-010",
+      "barcode": "893850120018",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 99000,
+      "cost": 47000,
+      "stock": 41,
+      "minStock": 15,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P018.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Tinh dầu bưởi dùng chăm sóc tóc, massage da đầu và xông hương thư giãn."
+    },
+    {
+      "id": "P019",
+      "name": "Tinh dầu sả Java Befine 10ml",
+      "sku": "TD-SJ-010",
+      "barcode": "893850120019",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 89000,
+      "cost": 42000,
+      "stock": 55,
+      "minStock": 20,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P019.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Mùi sả Java mạnh, phù hợp khử mùi, đuổi muỗi và xông phòng."
+    },
+    {
+      "id": "P020",
+      "name": "Tinh dầu quế Befine 10ml",
+      "sku": "TD-QUE-010",
+      "barcode": "893850120020",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 99000,
+      "cost": 47000,
+      "stock": 24,
+      "minStock": 10,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P020.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Hương quế ấm, mạnh, phù hợp không gian cần cảm giác ấm áp."
+    },
+    {
+      "id": "P021",
+      "name": "Tinh dầu mùi già Befine 10ml",
+      "sku": "TD-MG-010",
+      "barcode": "893850120021",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 109000,
+      "cost": 52000,
+      "stock": 18,
+      "minStock": 8,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P021.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Mùi hương truyền thống, gợi cảm giác Tết và không gian nhà Việt."
+    },
+    {
+      "id": "P022",
+      "name": "Granola bơ đậu phộng Befine 300g",
+      "sku": "BF-GRANOLA-300",
+      "barcode": "893850120022",
+      "category": "Befine Foods",
+      "brand": "Befine Foods",
+      "price": 129000,
+      "cost": 69000,
+      "stock": 32,
+      "minStock": 15,
+      "warehouse": "Kho Online",
+      "status": "active",
+      "image": "/uploads/products/seed/P022.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Granola bơ đậu phộng dùng mật dừa nước, yến mạch, hạt và trái cây sấy."
+    },
+    {
+      "id": "P023",
+      "name": "Bánh thuyền mix hạt Befine 180g",
+      "sku": "BF-BT-180",
+      "barcode": "893850120023",
+      "category": "Befine Foods",
+      "brand": "Befine Foods",
+      "price": 119000,
+      "cost": 64000,
+      "stock": 29,
+      "minStock": 15,
+      "warehouse": "Kho Online",
+      "status": "active",
+      "image": "/uploads/products/seed/P023.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Bánh thuyền mix hạt giòn, ngọt dịu bằng mật dừa nước, phù hợp làm quà và ăn vặt lành mạnh."
+    },
+    {
+      "id": "P024",
+      "name": "Toner hoa hồng Befine 100ml",
+      "sku": "SK-THH-100",
+      "barcode": "893850120024",
+      "category": "Chăm sóc da",
+      "brand": "Befine",
+      "price": 150000,
+      "cost": 69000,
+      "stock": 21,
+      "minStock": 12,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P024.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Toner hoa hồng hỗ trợ cấp ẩm, làm dịu và cân bằng da sau làm sạch."
+    },
+    {
+      "id": "P025",
+      "name": "Toner trầu không Befine 100ml",
+      "sku": "SK-TK-100",
+      "barcode": "893850120025",
+      "category": "Chăm sóc da",
+      "brand": "Befine",
+      "price": 150000,
+      "cost": 69000,
+      "stock": 16,
+      "minStock": 12,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P025.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Toner trầu không phù hợp da dầu, da dễ bí tắc, dùng sau bước rửa mặt."
+    },
+    {
+      "id": "P026",
+      "name": "Nước súc miệng thảo dược Befine 300ml",
+      "sku": "CSM-300",
+      "barcode": "893850120026",
+      "category": "Chăm sóc cá nhân",
+      "brand": "Befine",
+      "price": 90000,
+      "cost": 43000,
+      "stock": 48,
+      "minStock": 20,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P026.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Nước súc miệng thảo dược dùng hằng ngày, kết hợp bàn chải tre trong combo sống xanh."
+    },
+    {
+      "id": "P027",
+      "name": "Xà bông sả chanh Befine Green",
+      "sku": "XB-SC-090",
+      "barcode": "893850120027",
+      "category": "Xà bông",
+      "brand": "Befine Green",
+      "price": 69000,
+      "cost": 31000,
+      "stock": 46,
+      "minStock": 20,
+      "warehouse": "Kho Phố Vọng",
+      "status": "active",
+      "image": "/uploads/products/seed/P027.jpg",
+      "channel": [
+        "POS",
+        "Shopee",
+        "Website Befine.vn"
+      ],
+      "description": "Xà bông thủ công mùi sả chanh, làm sạch nhẹ nhàng, thơm mát."
+    },
+    {
+      "id": "P028",
+      "name": "Gáo múc nước gáo dừa Bến Tre",
+      "sku": "TC-GD-L",
+      "barcode": "893850120028",
+      "category": "Thủ công xanh",
+      "brand": "Làng nghề",
+      "price": 129000,
+      "cost": 62000,
+      "stock": 10,
+      "minStock": 12,
+      "warehouse": "Kho Phố Vọng",
+      "status": "low_stock",
+      "image": "/uploads/products/seed/P028.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Gáo múc nước từ gáo dừa và cán gỗ dừa, mang cảm giác mộc mạc của làng quê Bến Tre."
+    },
+    {
+      "id": "P029",
+      "name": "Cốc tre khắc tên theo yêu cầu",
+      "sku": "TC-CT-KT",
+      "barcode": "893850120029",
+      "category": "Thủ công xanh",
+      "brand": "Làng nghề",
+      "price": 99000,
+      "cost": 43000,
+      "stock": 58,
+      "minStock": 20,
+      "warehouse": "Kho Phố Vọng",
+      "status": "active",
+      "image": "/uploads/products/seed/P029.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Cốc tre cá nhân hóa, nhận khắc tên, logo, hình 12 con giáp theo yêu cầu."
+    },
+    {
+      "id": "P030",
+      "name": "Bàn chải tre Befine",
+      "sku": "TC-BCT-001",
+      "barcode": "893850120030",
+      "category": "Thủ công xanh",
+      "brand": "Befine Life",
+      "price": 25000,
+      "cost": 11000,
+      "stock": 120,
+      "minStock": 50,
+      "warehouse": "Kho Online",
+      "status": "active",
+      "image": "/uploads/products/seed/P030.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Bàn chải tre thân thiện môi trường, thường dùng kèm nước súc miệng thảo dược."
+    },
+    {
+      "image": "/uploads/products/seed/P031.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "status": "active",
+      "id": "P031",
+      "name": "Tinh dầu tràm Befine 10ml",
+      "sku": "TD-TRAM-010",
+      "barcode": "893850120031",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 99000,
+      "cost": 47000,
+      "stock": 48,
+      "minStock": 18,
+      "warehouse": "Kho Hà Đông",
+      "description": "Tinh dầu tràm thiên nhiên, mùi ấm, phù hợp xông phòng và chăm sóc gia đình."
+    },
+    {
+      "image": "/uploads/products/seed/P032.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "status": "active",
+      "id": "P032",
+      "name": "Tinh dầu Cold & Flu Befine 10ml",
+      "sku": "TD-CF-010",
+      "barcode": "893850120032",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 129000,
+      "cost": 61000,
+      "stock": 22,
+      "minStock": 10,
+      "warehouse": "Kho Hà Đông",
+      "description": "Blend tinh dầu nhóm hô hấp, dùng xông phòng khi thời tiết thay đổi."
+    },
+    {
+      "image": "/uploads/products/seed/P033.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "status": "active",
+      "id": "P033",
+      "name": "Tinh dầu quất Befine 10ml",
+      "sku": "TD-QUAT-010",
+      "barcode": "893850120033",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 89000,
+      "cost": 42000,
+      "stock": 34,
+      "minStock": 15,
+      "warehouse": "Kho Online",
+      "description": "Mùi quất tươi, hợp treo xe, xông phòng, tạo cảm giác sạch và dễ chịu."
+    },
+    {
+      "image": "/uploads/products/seed/P034.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "status": "active",
+      "id": "P034",
+      "name": "Tinh dầu hương nhu Befine 10ml",
+      "sku": "TD-HN-010",
+      "barcode": "893850120034",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 99000,
+      "cost": 47000,
+      "stock": 27,
+      "minStock": 10,
+      "warehouse": "Kho Hà Đông",
+      "description": "Tinh dầu hương nhu truyền thống, phù hợp chăm sóc tóc và thư giãn."
+    },
+    {
+      "image": "/uploads/products/seed/P035.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "status": "active",
+      "id": "P035",
+      "name": "Tinh dầu hoa ngũ sắc Befine 10ml",
+      "sku": "TD-HNS-010",
+      "barcode": "893850120035",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 109000,
+      "cost": 52000,
+      "stock": 19,
+      "minStock": 8,
+      "warehouse": "Kho Hà Đông",
+      "description": "Hương thảo mộc đặc trưng từ vùng nguyên liệu sạch."
+    },
+    {
+      "image": "/uploads/products/seed/P036.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "status": "active",
+      "id": "P036",
+      "name": "Tinh dầu treo xe sả chanh Befine 5ml",
+      "sku": "TD-TREO-SC-005",
+      "barcode": "893850120036",
+      "category": "Tinh dầu treo",
+      "brand": "Befine",
+      "price": 69000,
+      "cost": 29000,
+      "stock": 72,
+      "minStock": 25,
+      "warehouse": "Kho Online",
+      "description": "Lọ tinh dầu treo nhỏ gọn cho xe hơi, phòng làm việc và tủ quần áo."
+    },
+    {
+      "image": "/uploads/products/seed/P037.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "status": "active",
+      "id": "P037",
+      "name": "Tinh dầu treo xe cam Befine 5ml",
+      "sku": "TD-TREO-CAM-005",
+      "barcode": "893850120037",
+      "category": "Tinh dầu treo",
+      "brand": "Befine",
+      "price": 69000,
+      "cost": 29000,
+      "stock": 64,
+      "minStock": 25,
+      "warehouse": "Kho Online",
+      "description": "Mùi cam ngọt tươi vui, giúp không gian nhỏ thơm nhẹ nhàng."
+    },
+    {
+      "image": "/uploads/products/seed/P038.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "status": "active",
+      "id": "P038",
+      "name": "Tinh dầu treo xe bạc hà Befine 5ml",
+      "sku": "TD-TREO-BH-005",
+      "barcode": "893850120038",
+      "category": "Tinh dầu treo",
+      "brand": "Befine",
+      "price": 69000,
+      "cost": 29000,
+      "stock": 58,
+      "minStock": 25,
+      "warehouse": "Kho Online",
+      "description": "Mùi bạc hà mát, phù hợp xe hơi và bàn làm việc."
+    },
+    {
+      "image": "/uploads/products/seed/P039.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P039",
+      "name": "Cốt gừng tràm Bekids 300ml",
+      "sku": "BK-CGT-300",
+      "barcode": "893850120039",
+      "category": "Mẹ & bé",
+      "brand": "Bekids",
+      "price": 189000,
+      "cost": 89000,
+      "stock": 18,
+      "minStock": 10,
+      "warehouse": "Kho Hà Đông",
+      "description": "Cốt gừng tràm không bã, dùng tắm/ngâm chân giữ ấm cho gia đình."
+    },
+    {
+      "image": "/uploads/products/seed/P040.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P040",
+      "name": "Lăn tinh dầu đuổi muỗi Bekids 10ml",
+      "sku": "BK-LDM-010",
+      "barcode": "893850120040",
+      "category": "Mẹ & bé",
+      "brand": "Bekids",
+      "price": 99000,
+      "cost": 46000,
+      "stock": 46,
+      "minStock": 18,
+      "warehouse": "Kho Online",
+      "description": "Lăn tinh dầu đuổi muỗi từ thành phần thảo mộc, tiện mang theo cho bé."
+    },
+    {
+      "image": "/uploads/products/seed/P041.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P041",
+      "name": "Dầu tràm xoa Bekids 30ml",
+      "sku": "BK-DTX-030",
+      "barcode": "893850120041",
+      "category": "Mẹ & bé",
+      "brand": "Bekids",
+      "price": 159000,
+      "cost": 72000,
+      "stock": 25,
+      "minStock": 12,
+      "warehouse": "Kho Hà Đông",
+      "description": "Dầu tràm xoa mùi ấm, phù hợp chăm sóc gia đình khi trời lạnh."
+    },
+    {
+      "image": "/uploads/products/seed/P042.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P042",
+      "name": "Nước tắm mùi già Befine 300ml",
+      "sku": "SK-NTMG-300",
+      "barcode": "893850120042",
+      "category": "Chăm sóc da",
+      "brand": "Befine",
+      "price": 139000,
+      "cost": 62000,
+      "stock": 24,
+      "minStock": 10,
+      "warehouse": "Kho Phố Vọng",
+      "description": "Nước tắm mùi già hương truyền thống, gợi cảm giác sạch và thư thái."
+    },
+    {
+      "image": "/uploads/products/seed/P043.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P043",
+      "name": "Combo tóc bưởi + dầu dừa Befine",
+      "sku": "SK-COMBO-TOC",
+      "barcode": "893850120043",
+      "category": "Chăm sóc tóc",
+      "brand": "Befine",
+      "price": 219000,
+      "cost": 98000,
+      "stock": 16,
+      "minStock": 8,
+      "warehouse": "Kho Hà Đông",
+      "description": "Combo tinh dầu bưởi và dầu dừa phân đoạn dùng massage da đầu, chăm sóc tóc."
+    },
+    {
+      "image": "/uploads/products/seed/P044.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P044",
+      "name": "Xà bông than tre Befine Green",
+      "sku": "XB-TT-090",
+      "barcode": "893850120044",
+      "category": "Xà bông",
+      "brand": "Befine Green",
+      "price": 69000,
+      "cost": 31000,
+      "stock": 49,
+      "minStock": 18,
+      "warehouse": "Kho Phố Vọng",
+      "description": "Xà bông thủ công than tre, phù hợp làm sạch da dầu."
+    },
+    {
+      "image": "/uploads/products/seed/P045.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P045",
+      "name": "Xà bông cam nghệ Befine Green",
+      "sku": "XB-CN-090",
+      "barcode": "893850120045",
+      "category": "Xà bông",
+      "brand": "Befine Green",
+      "price": 69000,
+      "cost": 31000,
+      "stock": 43,
+      "minStock": 18,
+      "warehouse": "Kho Phố Vọng",
+      "description": "Xà bông thủ công hương cam nghệ, mùi dịu, dùng hằng ngày."
+    },
+    {
+      "image": "/uploads/products/seed/P046.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P046",
+      "name": "Xà bông trầu không Befine Green",
+      "sku": "XB-TK-090",
+      "barcode": "893850120046",
+      "category": "Xà bông",
+      "brand": "Befine Green",
+      "price": 69000,
+      "cost": 31000,
+      "stock": 36,
+      "minStock": 18,
+      "warehouse": "Kho Phố Vọng",
+      "description": "Xà bông thủ công trầu không, mùi thảo mộc sạch."
+    },
+    {
+      "image": "/uploads/products/seed/P047.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P047",
+      "name": "Xà bông mướp đắng Befine Green",
+      "sku": "XB-MD-090",
+      "barcode": "893850120047",
+      "category": "Xà bông",
+      "brand": "Befine Green",
+      "price": 69000,
+      "cost": 31000,
+      "stock": 31,
+      "minStock": 18,
+      "warehouse": "Kho Phố Vọng",
+      "description": "Xà bông mướp đắng, phù hợp người thích sản phẩm mộc và lành tính."
+    },
+    {
+      "image": "/uploads/products/seed/P048.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P048",
+      "name": "Xơ mướp nguyên trái Befine Life",
+      "sku": "TC-XM-NT",
+      "barcode": "893850120048",
+      "category": "Thủ công xanh",
+      "brand": "Làng nghề",
+      "price": 15000,
+      "cost": 6500,
+      "stock": 260,
+      "minStock": 80,
+      "warehouse": "Kho Phố Vọng",
+      "description": "Xơ mướp phơi khô tự nhiên, không tẩy trắng, dùng rửa bát, tắm, vệ sinh đồ dùng."
+    },
+    {
+      "image": "/uploads/products/seed/P049.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P049",
+      "name": "Găng tay tắm xơ mướp",
+      "sku": "TC-XM-GT",
+      "barcode": "893850120049",
+      "category": "Thủ công xanh",
+      "brand": "Làng nghề",
+      "price": 45000,
+      "cost": 21000,
+      "stock": 94,
+      "minStock": 30,
+      "warehouse": "Kho Phố Vọng",
+      "description": "Găng tay xơ mướp hỗ trợ tắm, kỳ cọ, thay thế sản phẩm nhựa dùng một lần."
+    },
+    {
+      "image": "/uploads/products/seed/P050.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P050",
+      "name": "Muỗng gỗ dừa nhí 12cm",
+      "sku": "TC-MGD-012",
+      "barcode": "893850120050",
+      "category": "Thủ công xanh",
+      "brand": "Làng nghề",
+      "price": 25000,
+      "cost": 12000,
+      "stock": 118,
+      "minStock": 40,
+      "warehouse": "Kho Phố Vọng",
+      "description": "Muỗng gỗ dừa nhỏ dùng trộn mặt nạ, múc gia vị, decor chụp ảnh."
+    },
+    {
+      "image": "/uploads/products/seed/P051.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P051",
+      "name": "Chén gáo dừa trái tim",
+      "sku": "TC-CGD-TIM",
+      "barcode": "893850120051",
+      "category": "Thủ công xanh",
+      "brand": "Làng nghề",
+      "price": 59000,
+      "cost": 28000,
+      "stock": 57,
+      "minStock": 20,
+      "warehouse": "Kho Phố Vọng",
+      "description": "Chén gáo dừa hình trái tim, mộc mạc, dùng decor và trộn sản phẩm chăm sóc da."
+    },
+    {
+      "image": "/uploads/products/seed/P052.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "status": "active",
+      "id": "P052",
+      "name": "Bút tre khắc tên Befine Life",
+      "sku": "TC-BUT-TRE",
+      "barcode": "893850120052",
+      "category": "Quà tặng xanh",
+      "brand": "Làng nghề",
+      "price": 12000,
+      "cost": 5200,
+      "stock": 500,
+      "minStock": 120,
+      "warehouse": "Kho Online",
+      "description": "Bút tre thân thiện môi trường, nhận khắc tên/logo theo yêu cầu."
+    },
+    {
+      "id": "P053",
+      "name": "Tinh dầu Cold&Flu Befine 10ml",
+      "sku": "TD-CF-010",
+      "barcode": "893850120053",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 129000,
+      "cost": 59000,
+      "stock": 66,
+      "minStock": 18,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P053.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Blend tinh dầu nhóm hô hấp dùng xông phòng khi thời tiết thay đổi."
+    },
+    {
+      "id": "P054",
+      "name": "Tinh dầu hương nhu Befine 10ml",
+      "sku": "TD-HN-010",
+      "barcode": "893850120054",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 99000,
+      "cost": 43000,
+      "stock": 42,
+      "minStock": 15,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P054.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Mùi thảo mộc truyền thống, phù hợp xông tóc và thư giãn."
+    },
+    {
+      "id": "P055",
+      "name": "Tinh dầu hoa ngũ sắc Befine 10ml",
+      "sku": "TD-HNS-010",
+      "barcode": "893850120055",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 99000,
+      "cost": 43000,
+      "stock": 36,
+      "minStock": 15,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P055.jpg",
+      "channel": [
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Tinh dầu thiên nhiên từ nhóm thảo mộc vùng nguyên liệu sạch."
+    },
+    {
+      "id": "P056",
+      "name": "Tinh dầu ngải cứu Befine 5ml",
+      "sku": "TD-NC-010",
+      "barcode": "893850120056",
+      "category": "Tinh dầu",
+      "brand": "Befine",
+      "price": 205000,
+      "cost": 98000,
+      "stock": 0,
+      "minStock": 5,
+      "warehouse": "Kho Hà Đông",
+      "status": "out_of_stock",
+      "image": "/uploads/products/seed/P056.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Tinh dầu ngải cứu Befine 5ml, ảnh sản phẩm chính thức từ website Befine.",
+      "compareAtPrice": 255000
+    },
+    {
+      "id": "P057",
+      "name": "Tinh dầu treo quất Befine 8ml",
+      "sku": "TREO-QUAT-008",
+      "barcode": "893850120057",
+      "category": "Tinh dầu treo",
+      "brand": "Befine",
+      "price": 69000,
+      "cost": 29000,
+      "stock": 90,
+      "minStock": 25,
+      "warehouse": "Kho Online",
+      "status": "active",
+      "image": "/uploads/products/seed/P057.jpg",
+      "channel": [
+        "Website Befine.vn",
+        "Shopee",
+        "TikTok Shop"
+      ],
+      "description": "Mùi quất tươi nhẹ, dùng treo xe hoặc tủ nhỏ."
+    },
+    {
+      "id": "P058",
+      "name": "Tinh dầu treo mùi già Befine 8ml",
+      "sku": "TREO-MG-008",
+      "barcode": "893850120058",
+      "category": "Tinh dầu treo",
+      "brand": "Befine",
+      "price": 79000,
+      "cost": 33000,
+      "stock": 48,
+      "minStock": 20,
+      "warehouse": "Kho Online",
+      "status": "active",
+      "image": "/uploads/products/seed/P058.jpg",
+      "channel": [
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Mùi mùi già truyền thống, gợi cảm giác Tết và nhà sạch."
+    },
+    {
+      "id": "P059",
+      "name": "Cốt gừng tràm Bekids 300ml",
+      "sku": "BK-CGT-300",
+      "barcode": "893850120059",
+      "category": "Mẹ & bé",
+      "brand": "Bekids",
+      "price": 249000,
+      "cost": 118000,
+      "stock": 24,
+      "minStock": 12,
+      "warehouse": "Kho Online",
+      "status": "active",
+      "image": "/uploads/products/seed/P059.jpg",
+      "channel": [
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Cốt gừng tràm không bã, dùng pha tắm/ngâm chân theo hướng dẫn."
+    },
+    {
+      "id": "P060",
+      "name": "Cốt gừng tràm Bekids 500ml",
+      "sku": "BK-CGT-500",
+      "barcode": "893850120060",
+      "category": "Mẹ & bé",
+      "brand": "Bekids",
+      "price": 359000,
+      "cost": 168000,
+      "stock": 18,
+      "minStock": 8,
+      "warehouse": "Kho Online",
+      "status": "active",
+      "image": "/uploads/products/seed/P060.jpg",
+      "channel": [
+        "Website Befine.vn",
+        "Đại lý/NPP"
+      ],
+      "description": "Dung tích lớn cho gia đình/đại lý mẹ bé."
+    },
+    {
+      "id": "P061",
+      "name": "Nước tắm mùi già Befine 500ml",
+      "sku": "NT-MG-500",
+      "barcode": "893850120061",
+      "category": "Chăm sóc cá nhân",
+      "brand": "Befine",
+      "price": 159000,
+      "cost": 69000,
+      "stock": 32,
+      "minStock": 15,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P061.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Nước tắm mùi già chưng cất, tạo cảm giác sạch và thư giãn."
+    },
+    {
+      "id": "P062",
+      "name": "Nước súc miệng thảo dược Befine 300ml",
+      "sku": "NSM-TD-300",
+      "barcode": "893850120062",
+      "category": "Chăm sóc cá nhân",
+      "brand": "Befine",
+      "price": 129000,
+      "cost": 55000,
+      "stock": 27,
+      "minStock": 12,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P062.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Nước súc miệng thảo dược, phù hợp chăm sóc khoang miệng hằng ngày."
+    },
+    {
+      "id": "P063",
+      "name": "Đèn xông tinh dầu cổ trứng",
+      "sku": "DEN-TRUNG-01",
+      "barcode": "893850120063",
+      "category": "Phụ kiện khuếch tán",
+      "brand": "Befine Life",
+      "price": 189000,
+      "cost": 98000,
+      "stock": 18,
+      "minStock": 8,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P063.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Đèn xông gốm dùng với tinh dầu thiên nhiên."
+    },
+    {
+      "id": "P064",
+      "name": "Máy khuếch tán tinh dầu 300ml",
+      "sku": "MAY-KT-300",
+      "barcode": "893850120064",
+      "category": "Phụ kiện khuếch tán",
+      "brand": "Befine Life",
+      "price": 359000,
+      "cost": 210000,
+      "stock": 12,
+      "minStock": 6,
+      "warehouse": "Kho Online",
+      "status": "active",
+      "image": "/uploads/products/seed/P064.jpg",
+      "channel": [
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Máy khuếch tán cho phòng ngủ/phòng làm việc."
+    },
+    {
+      "id": "P065",
+      "name": "Xơ mướp găng tay tắm",
+      "sku": "XM-GTT-01",
+      "barcode": "893850120065",
+      "category": "Sản phẩm xanh",
+      "brand": "Befine Life",
+      "price": 59000,
+      "cost": 26000,
+      "stock": 72,
+      "minStock": 25,
+      "warehouse": "Kho Phố Vọng",
+      "status": "active",
+      "image": "/uploads/products/seed/P065.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Găng tay xơ mướp phơi khô tự nhiên, thay thế bông tắm nhựa."
+    },
+    {
+      "id": "P066",
+      "name": "Xơ mướp giọt nước",
+      "sku": "XM-GIOT-01",
+      "barcode": "893850120066",
+      "category": "Sản phẩm xanh",
+      "brand": "Befine Life",
+      "price": 49000,
+      "cost": 21000,
+      "stock": 86,
+      "minStock": 25,
+      "warehouse": "Kho Phố Vọng",
+      "status": "active",
+      "image": "/uploads/products/seed/P066.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Miếng xơ mướp tạo hình giọt nước, dễ cầm khi dùng."
+    },
+    {
+      "id": "P067",
+      "name": "Đũa xào buông Bình Thuận",
+      "sku": "DUA-XAO-BUONG",
+      "barcode": "893850120067",
+      "category": "Sản phẩm xanh",
+      "brand": "Befine Life",
+      "price": 39000,
+      "cost": 18000,
+      "stock": 110,
+      "minStock": 30,
+      "warehouse": "Kho Phố Vọng",
+      "status": "active",
+      "image": "/uploads/products/seed/P067.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Đũa xào từ cây buông tự nhiên, không sơn phủ."
+    },
+    {
+      "id": "P068",
+      "name": "Đũa cả gỗ dừa Bến Tre",
+      "sku": "DUA-CA-GODUA",
+      "barcode": "893850120068",
+      "category": "Sản phẩm xanh",
+      "brand": "Befine Life",
+      "price": 49000,
+      "cost": 22000,
+      "stock": 74,
+      "minStock": 25,
+      "warehouse": "Kho Phố Vọng",
+      "status": "active",
+      "image": "/uploads/products/seed/P068.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Đũa cả gỗ dừa mộc, phù hợp bếp gia đình."
+    },
+    {
+      "id": "P069",
+      "name": "Bút tre khắc tên theo yêu cầu",
+      "sku": "BUT-TRE-KHAC",
+      "barcode": "893850120069",
+      "category": "Sản phẩm xanh",
+      "brand": "Befine Life",
+      "price": 19000,
+      "cost": 8000,
+      "stock": 240,
+      "minStock": 60,
+      "warehouse": "Kho Online",
+      "status": "active",
+      "image": "/uploads/products/seed/P069.png",
+      "channel": [
+        "Website Befine.vn",
+        "Đại lý/NPP"
+      ],
+      "description": "Bút tre nhận khắc tên/logo cho quà tặng xanh."
+    },
+    {
+      "id": "P070",
+      "name": "Bàn chải tre khắc tên",
+      "sku": "BCT-KHAC-01",
+      "barcode": "893850120070",
+      "category": "Sản phẩm xanh",
+      "brand": "Befine Life",
+      "price": 25000,
+      "cost": 11000,
+      "stock": 180,
+      "minStock": 50,
+      "warehouse": "Kho Online",
+      "status": "active",
+      "image": "/uploads/products/seed/P070.png",
+      "channel": [
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Bàn chải tre cá nhân hóa, giảm nhựa dùng một lần."
+    },
+    {
+      "id": "P071",
+      "name": "Combo tóc bưởi + dầu dừa",
+      "sku": "CB-TOC-BUOI-DD",
+      "barcode": "893850120071",
+      "category": "Combo",
+      "brand": "Befine",
+      "price": 219000,
+      "cost": 104000,
+      "stock": 25,
+      "minStock": 10,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P071.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "description": "Combo chăm sóc tóc gồm tinh dầu bưởi và dầu dừa phân đoạn."
+    },
+    {
+      "id": "P072",
+      "name": "Combo nhà Gừng Befine",
+      "sku": "CB-NHA-GUNG",
+      "barcode": "893850120072",
+      "category": "Combo",
+      "brand": "Befine",
+      "price": 349000,
+      "cost": 165000,
+      "stock": 16,
+      "minStock": 8,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P072.png",
+      "channel": [
+        "POS",
+        "Website Befine.vn"
+      ],
+      "description": "Combo gừng gồm xà bông, tinh dầu và cốt gừng tràm."
+    },
+    {
+      "id": "P073",
+      "name": "Tinh dầu xịt đuổi muỗi Bekids 50ml",
+      "sku": "BK-XIT-MUOI-050",
+      "barcode": "893850120073",
+      "category": "Mẹ & bé",
+      "brand": "Bekids",
+      "price": 250000,
+      "compareAtPrice": 299000,
+      "cost": 118000,
+      "stock": 43,
+      "minStock": 12,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P073.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "unit": "Chai",
+      "weight": 50,
+      "description": "Xịt đuổi muỗi Bekids 50ml, lưu hương bền lâu; ảnh sản phẩm chính thức từ befine.vn.",
+      "tags": [
+        "Bekids",
+        "đuổi muỗi",
+        "mẹ và bé"
+      ],
+      "seoSlug": "tinh-dau-xit-duoi-muoi-bekids-50ml"
+    },
+    {
+      "id": "P074",
+      "name": "Combo 7 loại xà bông Befine Green 100g",
+      "sku": "BG-COMBO-7",
+      "barcode": "893850120074",
+      "category": "Xà bông",
+      "brand": "Befine Green",
+      "price": 465000,
+      "compareAtPrice": 650000,
+      "cost": 235000,
+      "stock": 26,
+      "minStock": 8,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P074.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "unit": "Combo",
+      "weight": 700,
+      "description": "Combo 7 loại xà bông ủ lạnh Befine Green, ảnh sản phẩm chính thức từ befine.vn.",
+      "tags": [
+        "xà bông",
+        "Befine Green",
+        "combo"
+      ],
+      "seoSlug": "combo-7-loai-xa-bong-befine-green"
+    },
+    {
+      "id": "P075",
+      "name": "Xà bông tía tô Befine Green 100g",
+      "sku": "BG-TIA-TO-100",
+      "barcode": "893850120075",
+      "category": "Xà bông",
+      "brand": "Befine Green",
+      "price": 80000,
+      "compareAtPrice": 95000,
+      "cost": 39000,
+      "stock": 20,
+      "minStock": 8,
+      "warehouse": "Kho Hà Đông",
+      "status": "active",
+      "image": "/uploads/products/seed/P075.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "unit": "Bánh",
+      "weight": 100,
+      "description": "Xà bông tía tô Befine Green sản xuất theo phương pháp ủ lạnh; ảnh sản phẩm chính thức từ befine.vn.",
+      "tags": [
+        "xà bông",
+        "tía tô",
+        "Befine Green"
+      ],
+      "seoSlug": "xa-bong-tia-to-befine-green"
+    },
+    {
+      "id": "P076",
+      "name": "Tinh dầu sả Java treo xe ô tô 8ml",
+      "sku": "TD-TREO-SJ-008",
+      "barcode": "893850120076",
+      "category": "Tinh dầu treo xe",
+      "brand": "Befine",
+      "price": 80000,
+      "compareAtPrice": 100000,
+      "cost": 38000,
+      "stock": 0,
+      "minStock": 10,
+      "warehouse": "Kho Online",
+      "status": "out_of_stock",
+      "image": "/uploads/products/seed/P076.jpg",
+      "channel": [
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "unit": "Lọ",
+      "weight": 8,
+      "description": "Tinh dầu sả Java treo xe 8ml với hương thảo dược tươi mát; ảnh chính thức từ befine.vn.",
+      "tags": [
+        "tinh dầu treo xe",
+        "sả Java",
+        "Befine"
+      ],
+      "seoSlug": "tinh-dau-sa-java-treo-xe-8ml"
+    },
+    {
+      "id": "P077",
+      "name": "Dầu tràm xoa Bekids 10ml",
+      "sku": "BK-DTX-010",
+      "barcode": "893850120077",
+      "category": "Mẹ & bé",
+      "brand": "Bekids",
+      "price": 45000,
+      "compareAtPrice": 60000,
+      "cost": 21000,
+      "stock": 0,
+      "minStock": 12,
+      "warehouse": "Kho Hà Đông",
+      "status": "out_of_stock",
+      "image": "/uploads/products/seed/P077.jpg",
+      "channel": [
+        "POS",
+        "Website Befine.vn",
+        "Shopee"
+      ],
+      "unit": "Lọ",
+      "weight": 10,
+      "description": "Dầu tràm xoa Bekids 10ml dùng làm ấm nhẹ dịu; ảnh sản phẩm chính thức từ befine.vn.",
+      "tags": [
+        "Bekids",
+        "dầu tràm xoa",
+        "mẹ và bé"
+      ],
+      "seoSlug": "dau-tram-xoa-bekids-10ml"
+    }
+  ],
+  "customers": [
+    {
+      "id": "KH001",
+      "name": "Nguyễn Văn Anh",
+      "phone": "0901234567",
+      "email": "nvanh@email.com",
+      "address": "Hà Đông, Hà Nội",
+      "totalOrders": 24,
+      "totalSpent": 18500000,
+      "debt": 0,
+      "tier": "vip",
+      "tags": [
+        "Mua tinh dầu",
+        "POS"
+      ],
+      "lastOrder": "2026-07-05",
+      "joinDate": "2024-03-15",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH002",
+      "name": "Trần Thị Bích",
+      "phone": "0912345678",
+      "email": "ttbich@email.com",
+      "address": "Cầu Giấy, Hà Nội",
+      "totalOrders": 11,
+      "totalSpent": 7200000,
+      "debt": 350000,
+      "tier": "member",
+      "tags": [
+        "Shopee"
+      ],
+      "lastOrder": "2026-07-05",
+      "joinDate": "2025-01-22",
+      "source": "Shopee Befine Life"
+    },
+    {
+      "id": "KH003",
+      "name": "Lê Minh Cường",
+      "phone": "0923456789",
+      "email": "lmcuong@email.com",
+      "address": "Thanh Xuân, Hà Nội",
+      "totalOrders": 38,
+      "totalSpent": 42100000,
+      "debt": 0,
+      "tier": "diamond",
+      "tags": [
+        "Sỉ",
+        "Bánh hạt"
+      ],
+      "lastOrder": "2026-07-04",
+      "joinDate": "2023-11-08",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH004",
+      "name": "Phạm Thu Dung",
+      "phone": "0934567890",
+      "email": "ptdung@email.com",
+      "address": "Long Biên, Hà Nội",
+      "totalOrders": 6,
+      "totalSpent": 3400000,
+      "debt": 0,
+      "tier": "new",
+      "tags": [
+        "Mẹ & bé"
+      ],
+      "lastOrder": "2026-07-04",
+      "joinDate": "2026-04-01",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH005",
+      "name": "Hoàng Văn Em",
+      "phone": "0945678901",
+      "email": "hvem@email.com",
+      "address": "Nam Từ Liêm, Hà Nội",
+      "totalOrders": 15,
+      "totalSpent": 9800000,
+      "debt": 120000,
+      "tier": "member",
+      "tags": [
+        "Website"
+      ],
+      "lastOrder": "2026-07-03",
+      "joinDate": "2024-09-18",
+      "source": "Website Befine.vn"
+    },
+    {
+      "id": "KH006",
+      "name": "Vũ Thị Phương",
+      "phone": "0956789012",
+      "email": "vtphuong@email.com",
+      "address": "Hà Đông, Hà Nội",
+      "totalOrders": 29,
+      "totalSpent": 31200000,
+      "debt": 0,
+      "tier": "vip",
+      "tags": [
+        "Sỉ",
+        "Thủ công xanh"
+      ],
+      "lastOrder": "2026-07-02",
+      "joinDate": "2024-02-14",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH007",
+      "name": "Đặng Quốc Hùng",
+      "phone": "0967890123",
+      "email": "dqhung@email.com",
+      "address": "Hoàng Mai, Hà Nội",
+      "totalOrders": 3,
+      "totalSpent": 1450000,
+      "debt": 0,
+      "tier": "new",
+      "tags": [
+        "POS"
+      ],
+      "lastOrder": "2026-07-02",
+      "joinDate": "2026-05-20",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH008",
+      "name": "Bùi Thanh Tú",
+      "phone": "0978901234",
+      "email": "bttu@email.com",
+      "address": "Bắc Từ Liêm, Hà Nội",
+      "totalOrders": 52,
+      "totalSpent": 68900000,
+      "debt": 0,
+      "tier": "diamond",
+      "tags": [
+        "VIP",
+        "Online"
+      ],
+      "lastOrder": "2026-07-01",
+      "joinDate": "2023-06-30",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH009",
+      "name": "Cửa hàng Mẹ & Bé An Nhiên",
+      "phone": "0987654321",
+      "email": "annhien.mebevn@gmail.com",
+      "address": "Thanh Xuân, Hà Nội",
+      "totalOrders": 18,
+      "totalSpent": 24500000,
+      "debt": 0,
+      "tier": "wholesale",
+      "tags": [
+        "Đại lý",
+        "Mẹ & bé"
+      ],
+      "lastOrder": "2026-07-05",
+      "joinDate": "2026-03-20",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH010",
+      "name": "Spa Mộc Tâm",
+      "phone": "0977112233",
+      "email": "contact@moctamspa.vn",
+      "address": "Cầu Giấy, Hà Nội",
+      "totalOrders": 14,
+      "totalSpent": 19600000,
+      "debt": 1200000,
+      "tier": "member",
+      "tags": [
+        "Spa",
+        "Tinh dầu"
+      ],
+      "lastOrder": "2026-07-04",
+      "joinDate": "2026-04-02",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH011",
+      "name": "Chị Hạnh - Đại lý online",
+      "phone": "0966888222",
+      "email": "hanh.daily@gmail.com",
+      "address": "Bắc Ninh",
+      "totalOrders": 32,
+      "totalSpent": 58700000,
+      "debt": 3500000,
+      "tier": "vip",
+      "tags": [
+        "Đại lý",
+        "Online"
+      ],
+      "lastOrder": "2026-07-06",
+      "joinDate": "2026-02-18",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH012",
+      "name": "Green Corner Store",
+      "phone": "0933555777",
+      "email": "green.corner@gmail.com",
+      "address": "Đống Đa, Hà Nội",
+      "totalOrders": 9,
+      "totalSpent": 8300000,
+      "debt": 0,
+      "tier": "member",
+      "tags": [
+        "Sống xanh",
+        "Thủ công"
+      ],
+      "lastOrder": "2026-07-03",
+      "joinDate": "2026-05-11",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH013",
+      "name": "Ngọc Mai",
+      "phone": "0911223344",
+      "email": "ngocmai@gmail.com",
+      "address": "Hà Đông, Hà Nội",
+      "totalOrders": 5,
+      "totalSpent": 2250000,
+      "debt": 0,
+      "tier": "new",
+      "tags": [
+        "Khách lẻ",
+        "Bánh hạt"
+      ],
+      "lastOrder": "2026-07-02",
+      "joinDate": "2026-06-21",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH014",
+      "name": "CLB Yoga An Lành",
+      "phone": "0944332211",
+      "email": "yoga.anlanh@gmail.com",
+      "address": "Hoàng Mai, Hà Nội",
+      "totalOrders": 7,
+      "totalSpent": 6400000,
+      "debt": 0,
+      "tier": "member",
+      "tags": [
+        "Yoga",
+        "Befine Foods"
+      ],
+      "lastOrder": "2026-07-01",
+      "joinDate": "2026-05-28",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH015",
+      "name": "Nguyễn Hồng Mai",
+      "phone": "0915000001",
+      "email": "mai.nguyen@email.com",
+      "address": "Cầu Giấy, Hà Nội",
+      "totalOrders": 9,
+      "totalSpent": 3150000,
+      "debt": 0,
+      "tier": "member",
+      "tags": [
+        "Website",
+        "Tinh dầu treo"
+      ],
+      "lastOrder": "2026-07-07",
+      "joinDate": "2026-05-01",
+      "source": "Website Befine.vn"
+    },
+    {
+      "id": "KH016",
+      "name": "Đại lý Mẹ Bé An Nhiên",
+      "phone": "0915000002",
+      "email": "daily.annhien@example.com",
+      "address": "Nam Từ Liêm, Hà Nội",
+      "totalOrders": 18,
+      "totalSpent": 42800000,
+      "debt": 6200000,
+      "tier": "diamond",
+      "tags": [
+        "Đại lý",
+        "Bekids"
+      ],
+      "lastOrder": "2026-07-07",
+      "joinDate": "2025-09-12",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH017",
+      "name": "Yoga & Spa Mộc Lan",
+      "phone": "0915000003",
+      "email": "moclan.spa@example.com",
+      "address": "Thanh Xuân, Hà Nội",
+      "totalOrders": 14,
+      "totalSpent": 23800000,
+      "debt": 0,
+      "tier": "vip",
+      "tags": [
+        "Spa",
+        "Tinh dầu"
+      ],
+      "lastOrder": "2026-07-06",
+      "joinDate": "2025-11-20",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH018",
+      "name": "Trần Phương Thảo",
+      "phone": "0915000004",
+      "email": "thaotp@email.com",
+      "address": "Hà Đông, Hà Nội",
+      "totalOrders": 3,
+      "totalSpent": 760000,
+      "debt": 0,
+      "tier": "new",
+      "tags": [
+        "POS",
+        "Bánh hạt"
+      ],
+      "lastOrder": "2026-07-07",
+      "joinDate": "2026-07-01",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH019",
+      "name": "Cửa hàng Sống Xanh Linh Chi",
+      "phone": "0915000005",
+      "email": "linhchi.green@example.com",
+      "address": "Bắc Ninh",
+      "totalOrders": 11,
+      "totalSpent": 31600000,
+      "debt": 3500000,
+      "tier": "vip",
+      "tags": [
+        "Sỉ",
+        "Sản phẩm xanh"
+      ],
+      "lastOrder": "2026-07-07",
+      "joinDate": "2025-12-05",
+      "source": "POS cửa hàng"
+    },
+    {
+      "id": "KH020",
+      "name": "Bùi Quốc Huy",
+      "phone": "0915000006",
+      "email": "huybq@email.com",
+      "address": "Đống Đa, Hà Nội",
+      "totalOrders": 5,
+      "totalSpent": 1290000,
+      "debt": 0,
+      "tier": "member",
+      "tags": [
+        "Shopee",
+        "Đèn xông"
+      ],
+      "lastOrder": "2026-07-05",
+      "joinDate": "2026-02-18",
+      "source": "Shopee Befine Life"
+    }
+  ],
+  "staff": [
+    {
+      "id": "NV001",
+      "name": "Mai Befine",
+      "role": "Quản lý cửa hàng",
+      "phone": "0901111111",
+      "email": "ntlan@befine.vn",
+      "status": "active",
+      "branch": "Hà Đông",
+      "joinDate": "2023-03-01",
+      "salary": 15000000,
+      "orders": 0,
+      "permission": "owner"
+    },
+    {
+      "id": "NV002",
+      "name": "Trần Minh Khoa",
+      "role": "Thu ngân",
+      "phone": "0902222222",
+      "email": "tmkhoa@befine.vn",
+      "status": "active",
+      "branch": "Hà Đông",
+      "joinDate": "2024-01-15",
+      "salary": 9500000,
+      "orders": 412,
+      "permission": "cashier"
+    },
+    {
+      "id": "NV003",
+      "name": "Lê Hoàng Nam",
+      "role": "Nhân viên kho",
+      "phone": "0903333333",
+      "email": "lhnam@befine.vn",
+      "status": "active",
+      "branch": "Kho Phố Vọng",
+      "joinDate": "2024-06-01",
+      "salary": 8500000,
+      "orders": 0,
+      "permission": "warehouse"
+    },
+    {
+      "id": "NV004",
+      "name": "Phạm Thùy Linh",
+      "role": "Tư vấn bán hàng",
+      "phone": "0904444444",
+      "email": "ptlinh@befine.vn",
+      "status": "active",
+      "branch": "Online",
+      "joinDate": "2025-02-20",
+      "salary": 9000000,
+      "orders": 289,
+      "permission": "sales"
+    },
+    {
+      "id": "NV005",
+      "name": "Hoàng Anh Tuấn",
+      "role": "Marketing",
+      "phone": "0905555555",
+      "email": "hatuan@befine.vn",
+      "status": "on_leave",
+      "branch": "Online",
+      "joinDate": "2024-08-10",
+      "salary": 8000000,
+      "orders": 178,
+      "permission": "marketing"
+    },
+    {
+      "id": "NV006",
+      "name": "Hoàng Minh Đức",
+      "role": "Chăm sóc đơn online",
+      "phone": "0902220006",
+      "email": "duc.hm@befine.vn",
+      "status": "active",
+      "branch": "Online",
+      "joinDate": "2026-06-01",
+      "salary": 7500000,
+      "orders": 84,
+      "permission": "sales"
+    },
+    {
+      "id": "NV007",
+      "name": "Vũ Thu Hằng",
+      "role": "Marketing/Channel",
+      "phone": "0902220007",
+      "email": "hang.vt@befine.vn",
+      "status": "active",
+      "branch": "Online",
+      "joinDate": "2026-06-15",
+      "salary": 8000000,
+      "orders": 0,
+      "permission": "marketing"
+    },
+    {
+      "id": "NV008",
+      "name": "Đỗ Anh Tú",
+      "role": "Kế toán bán hàng",
+      "phone": "0902220008",
+      "email": "tu.da@befine.vn",
+      "status": "active",
+      "branch": "Hà Đông",
+      "joinDate": "2026-05-20",
+      "salary": 9000000,
+      "orders": 0,
+      "permission": "accountant"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "NCC001",
+      "name": "Vườn nguyên liệu Thạch Thành",
+      "contact": "Anh Trường",
+      "phone": "0981000001",
+      "email": "vuon@thachthanh.vn",
+      "address": "Thạch Thành, Thanh Hóa",
+      "category": "Tinh dầu",
+      "debt": 12500000,
+      "status": "active",
+      "rating": 4.8,
+      "lastImport": "2026-07-02"
+    },
+    {
+      "id": "NCC002",
+      "name": "Xưởng gỗ dừa Bến Tre",
+      "contact": "Chị Hạnh",
+      "phone": "0981000002",
+      "email": "bentre@langnghe.vn",
+      "address": "Bến Tre",
+      "category": "Thủ công xanh",
+      "debt": 8600000,
+      "status": "active",
+      "rating": 4.6,
+      "lastImport": "2026-06-28"
+    },
+    {
+      "id": "NCC003",
+      "name": "Cơ sở đũa buông Bình Thuận",
+      "contact": "Anh Lâm",
+      "phone": "0981000003",
+      "email": "duabuong@langnghe.vn",
+      "address": "Bình Thuận",
+      "category": "Thủ công xanh",
+      "debt": 0,
+      "status": "active",
+      "rating": 4.7,
+      "lastImport": "2026-06-25"
+    },
+    {
+      "id": "NCC004",
+      "name": "Befine Foods Factory",
+      "contact": "Ms. Mai",
+      "phone": "0981000004",
+      "email": "foods@befine.vn",
+      "address": "Hà Nội",
+      "category": "Befine Foods",
+      "debt": 0,
+      "status": "active",
+      "rating": 4.9,
+      "lastImport": "2026-07-04"
+    },
+    {
+      "id": "NCC005",
+      "name": "Xưởng gốm đèn xông Bát Tràng",
+      "contact": "Chị Hạnh",
+      "phone": "0981000005",
+      "email": "gom@battrang.vn",
+      "address": "Bát Tràng, Gia Lâm, Hà Nội",
+      "category": "Phụ kiện khuếch tán",
+      "debt": 4500000,
+      "status": "active",
+      "rating": 4.7,
+      "lastImport": "2026-07-06"
+    },
+    {
+      "id": "NCC006",
+      "name": "Xưởng xơ mướp Bắc Ninh",
+      "contact": "Anh T.",
+      "phone": "0981000006",
+      "email": "xomuop@bacninh.vn",
+      "address": "Bắc Ninh",
+      "category": "Sản phẩm xanh",
+      "debt": 0,
+      "status": "active",
+      "rating": 4.9,
+      "lastImport": "2026-07-07"
+    },
+    {
+      "id": "NCC007",
+      "name": "Cơ sở đũa buông Bình Thuận",
+      "contact": "Chú Năm",
+      "phone": "0981000007",
+      "email": "duabuong@binhthuan.vn",
+      "address": "Bình Thuận",
+      "category": "Đũa tự nhiên",
+      "debt": 1800000,
+      "status": "active",
+      "rating": 4.8,
+      "lastImport": "2026-07-04"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ĐH001244",
+      "date": "2026-07-06 20:10",
+      "customer": "Spa Mộc Tâm",
+      "phone": "0977112233",
+      "total": 1980000,
+      "discount": 99000,
+      "paid": 1881000,
+      "items": [
+        {
+          "productId": "P031",
+          "name": "Tinh dầu tràm Befine 10ml",
+          "qty": 6,
+          "price": 99000
+        },
+        {
+          "productId": "P015",
+          "name": "Tinh dầu ngọc am Befine 10ml",
+          "qty": 4,
+          "price": 189000
+        },
+        {
+          "productId": "P006",
+          "name": "Dầu dừa phân đoạn Befine 100ml",
+          "qty": 6,
+          "price": 135000
+        }
+      ],
+      "status": "completed",
+      "payment": "Chuyển khoản",
+      "channel": "Website Befine.vn",
+      "staff": "Phạm Thùy Linh"
+    },
+    {
+      "id": "ĐH001243",
+      "date": "2026-07-06 19:05",
+      "customer": "Ngọc Mai",
+      "phone": "0911223344",
+      "total": 347000,
+      "discount": 20000,
+      "paid": 327000,
+      "items": [
+        {
+          "productId": "P022",
+          "name": "Granola bơ đậu phộng Befine 300g",
+          "qty": 1,
+          "price": 129000
+        },
+        {
+          "productId": "P008",
+          "name": "Bánh rong biển kẹp hạt 200g",
+          "qty": 1,
+          "price": 99000
+        },
+        {
+          "productId": "P023",
+          "name": "Bánh thuyền mix hạt Befine 180g",
+          "qty": 1,
+          "price": 119000
+        }
+      ],
+      "status": "completed",
+      "payment": "Tiền mặt",
+      "channel": "POS cửa hàng",
+      "staff": "Lê Hoàng Nam"
+    },
+    {
+      "id": "ĐH001242",
+      "date": "2026-07-06 17:45",
+      "customer": "Green Corner Store",
+      "phone": "0933555777",
+      "total": 1450000,
+      "discount": 0,
+      "paid": 1450000,
+      "items": [
+        {
+          "productId": "P048",
+          "name": "Xơ mướp nguyên trái Befine Life",
+          "qty": 50,
+          "price": 15000
+        },
+        {
+          "productId": "P052",
+          "name": "Bút tre khắc tên Befine Life",
+          "qty": 50,
+          "price": 12000
+        },
+        {
+          "productId": "P050",
+          "name": "Muỗng gỗ dừa nhí 12cm",
+          "qty": 4,
+          "price": 25000
+        }
+      ],
+      "status": "shipping",
+      "payment": "Chuyển khoản",
+      "channel": "Website Befine.vn",
+      "staff": "Trần Minh Khoa"
+    },
+    {
+      "id": "ĐH001241",
+      "date": "2026-07-06 16:20",
+      "customer": "Chị Hạnh - Đại lý online",
+      "phone": "0966888222",
+      "total": 2380000,
+      "discount": 120000,
+      "paid": 2260000,
+      "items": [
+        {
+          "productId": "P039",
+          "name": "Cốt gừng tràm Bekids 300ml",
+          "qty": 5,
+          "price": 189000
+        },
+        {
+          "productId": "P040",
+          "name": "Lăn tinh dầu đuổi muỗi Bekids 10ml",
+          "qty": 10,
+          "price": 99000
+        },
+        {
+          "productId": "P041",
+          "name": "Dầu tràm xoa Bekids 30ml",
+          "qty": 4,
+          "price": 159000
+        }
+      ],
+      "status": "processing",
+      "payment": "Chuyển khoản",
+      "channel": "Facebook/Instagram",
+      "staff": "Mai Befine"
+    },
+    {
+      "id": "ĐH001234",
+      "date": "2026-07-06 14:32",
+      "customer": "Nguyễn Văn Anh",
+      "phone": "0901234567",
+      "total": 486000,
+      "discount": 0,
+      "paid": 486000,
+      "items": [
+        {
+          "productId": "P001",
+          "name": "Tinh dầu sả chanh Befine 10ml",
+          "qty": 2,
+          "price": 89000
+        },
+        {
+          "productId": "P008",
+          "name": "Bánh rong biển kẹp hạt 200g",
+          "qty": 2,
+          "price": 99000
+        },
+        {
+          "productId": "P010",
+          "name": "Đũa buông Bình Thuận 10 đôi",
+          "qty": 1,
+          "price": 85000
+        }
+      ],
+      "status": "completed",
+      "payment": "Tiền mặt",
+      "channel": "POS cửa hàng",
+      "staff": "Trần Minh Khoa"
+    },
+    {
+      "id": "ĐH001235",
+      "date": "2026-07-06 13:15",
+      "customer": "Trần Thị Bích",
+      "phone": "0912345678",
+      "total": 384000,
+      "discount": 10000,
+      "paid": 374000,
+      "items": [
+        {
+          "productId": "P003",
+          "name": "Tinh dầu tràm gió Bekids 30ml",
+          "qty": 1,
+          "price": 159000
+        },
+        {
+          "productId": "P004",
+          "name": "Sáp giữ ấm Bekids 0M+ 20g",
+          "qty": 1,
+          "price": 125000
+        },
+        {
+          "productId": "P002",
+          "name": "Tinh dầu bạc hà Befine 10ml",
+          "qty": 1,
+          "price": 95000
+        }
+      ],
+      "status": "processing",
+      "payment": "Chuyển khoản",
+      "channel": "Website Befine.vn",
+      "staff": "Phạm Thùy Linh"
+    },
+    {
+      "id": "ĐH001236",
+      "date": "2026-07-06 11:48",
+      "customer": "Lê Minh Cường",
+      "phone": "0923456789",
+      "total": 1420000,
+      "discount": 80000,
+      "paid": 1340000,
+      "items": [
+        {
+          "productId": "P011",
+          "name": "Xơ mướp rửa bát oval",
+          "qty": 50,
+          "price": 19000
+        },
+        {
+          "productId": "P012",
+          "name": "Bát gáo dừa decor 10-13cm",
+          "qty": 5,
+          "price": 79000
+        }
+      ],
+      "status": "shipping",
+      "payment": "COD",
+      "channel": "Shopee Befine Life",
+      "staff": "Phạm Thùy Linh"
+    },
+    {
+      "id": "ĐH001237",
+      "date": "2026-07-05 16:20",
+      "customer": "Phạm Thu Dung",
+      "phone": "0934567890",
+      "total": 284000,
+      "discount": 0,
+      "paid": 284000,
+      "items": [
+        {
+          "productId": "P003",
+          "name": "Tinh dầu tràm gió Bekids 30ml",
+          "qty": 1,
+          "price": 159000
+        },
+        {
+          "productId": "P004",
+          "name": "Sáp giữ ấm Bekids 0M+ 20g",
+          "qty": 1,
+          "price": 125000
+        }
+      ],
+      "status": "completed",
+      "payment": "Thẻ",
+      "channel": "POS cửa hàng",
+      "staff": "Trần Minh Khoa"
+    },
+    {
+      "id": "ĐH001238",
+      "date": "2026-07-05 09:33",
+      "customer": "Khách lẻ",
+      "phone": "",
+      "total": 168000,
+      "discount": 0,
+      "paid": 168000,
+      "items": [
+        {
+          "productId": "P001",
+          "name": "Tinh dầu sả chanh Befine 10ml",
+          "qty": 1,
+          "price": 89000
+        },
+        {
+          "productId": "P012",
+          "name": "Bát gáo dừa decor 10-13cm",
+          "qty": 1,
+          "price": 79000
+        }
+      ],
+      "status": "cancelled",
+      "payment": "Tiền mặt",
+      "channel": "POS cửa hàng",
+      "staff": "Trần Minh Khoa"
+    },
+    {
+      "id": "ĐH001239",
+      "date": "2026-07-04 15:55",
+      "customer": "Vũ Thị Phương",
+      "phone": "0956789012",
+      "total": 1890000,
+      "discount": 150000,
+      "paid": 1740000,
+      "items": [
+        {
+          "productId": "P010",
+          "name": "Đũa buông Bình Thuận 10 đôi",
+          "qty": 12,
+          "price": 85000
+        },
+        {
+          "productId": "P011",
+          "name": "Xơ mướp rửa bát oval",
+          "qty": 60,
+          "price": 19000
+        }
+      ],
+      "status": "completed",
+      "payment": "Chuyển khoản",
+      "channel": "Website Befine.vn",
+      "staff": "Mai Befine"
+    },
+    {
+      "id": "ĐH001240",
+      "date": "2026-07-03 10:12",
+      "customer": "Đặng Quốc Hùng",
+      "phone": "0967890123",
+      "total": 248000,
+      "discount": 0,
+      "paid": 248000,
+      "items": [
+        {
+          "productId": "P008",
+          "name": "Bánh rong biển kẹp hạt 200g",
+          "qty": 1,
+          "price": 99000
+        },
+        {
+          "productId": "P009",
+          "name": "Gạo lứt chà bông Befine 200g",
+          "qty": 1,
+          "price": 89000
+        },
+        {
+          "productId": "P007",
+          "name": "Xà bông gừng quế Befine Green",
+          "qty": 1,
+          "price": 69000
+        }
+      ],
+      "status": "completed",
+      "payment": "Tiền mặt",
+      "channel": "POS cửa hàng",
+      "staff": "Trần Minh Khoa"
+    },
+    {
+      "id": "ĐH001245",
+      "date": "2026-07-07 08:35",
+      "customer": "Nguyễn Hồng Mai",
+      "phone": "0915000001",
+      "total": 286000,
+      "discount": 0,
+      "paid": 286000,
+      "items": [
+        {
+          "productId": "P057",
+          "name": "Tinh dầu treo quất Befine 8ml",
+          "qty": 2,
+          "price": 69000
+        },
+        {
+          "productId": "P058",
+          "name": "Tinh dầu treo mùi già Befine 8ml",
+          "qty": 1,
+          "price": 79000
+        },
+        {
+          "productId": "P070",
+          "name": "Bàn chải tre khắc tên",
+          "qty": 3,
+          "price": 25000
+        }
+      ],
+      "status": "processing",
+      "payment": "Chuyển khoản",
+      "channel": "Website Befine.vn",
+      "staff": "Hoàng Minh Đức"
+    },
+    {
+      "id": "ĐH001246",
+      "date": "2026-07-07 09:10",
+      "customer": "Đại lý Mẹ Bé An Nhiên",
+      "phone": "0915000002",
+      "total": 9250000,
+      "discount": 750000,
+      "paid": 5000000,
+      "items": [
+        {
+          "productId": "P059",
+          "name": "Cốt gừng tràm Bekids 300ml",
+          "qty": 15,
+          "price": 249000
+        },
+        {
+          "productId": "P060",
+          "name": "Cốt gừng tràm Bekids 500ml",
+          "qty": 10,
+          "price": 359000
+        },
+        {
+          "productId": "P004",
+          "name": "Sáp giữ ấm Bekids 0M+ 20g",
+          "qty": 20,
+          "price": 125000
+        }
+      ],
+      "status": "shipping",
+      "payment": "Công nợ đại lý",
+      "channel": "Đại lý/NPP toàn quốc",
+      "staff": "Mai Befine"
+    },
+    {
+      "id": "ĐH001247",
+      "date": "2026-07-07 10:05",
+      "customer": "Trần Phương Thảo",
+      "phone": "0915000004",
+      "total": 188000,
+      "discount": 0,
+      "paid": 188000,
+      "items": [
+        {
+          "productId": "P008",
+          "name": "Bánh rong biển kẹp hạt 200g",
+          "qty": 1,
+          "price": 99000
+        },
+        {
+          "productId": "P009",
+          "name": "Gạo lứt chà bông Befine 200g",
+          "qty": 1,
+          "price": 89000
+        }
+      ],
+      "status": "completed",
+      "payment": "Tiền mặt",
+      "channel": "POS cửa hàng",
+      "staff": "Trần Minh Khoa"
+    },
+    {
+      "id": "ĐH001248",
+      "date": "2026-07-07 11:22",
+      "customer": "Yoga & Spa Mộc Lan",
+      "phone": "0915000003",
+      "total": 1685000,
+      "discount": 85000,
+      "paid": 1600000,
+      "items": [
+        {
+          "productId": "P053",
+          "name": "Tinh dầu Cold&Flu Befine 10ml",
+          "qty": 5,
+          "price": 129000
+        },
+        {
+          "productId": "P054",
+          "name": "Tinh dầu hương nhu Befine 10ml",
+          "qty": 5,
+          "price": 99000
+        },
+        {
+          "productId": "P063",
+          "name": "Đèn xông tinh dầu cổ trứng",
+          "qty": 3,
+          "price": 189000
+        }
+      ],
+      "status": "completed",
+      "payment": "Chuyển khoản",
+      "channel": "Website Befine.vn",
+      "staff": "Hoàng Minh Đức"
+    },
+    {
+      "id": "ĐH001249",
+      "date": "2026-07-07 13:40",
+      "customer": "Cửa hàng Sống Xanh Linh Chi",
+      "phone": "0915000005",
+      "total": 6480000,
+      "discount": 480000,
+      "paid": 3000000,
+      "items": [
+        {
+          "productId": "P065",
+          "name": "Xơ mướp găng tay tắm",
+          "qty": 40,
+          "price": 59000
+        },
+        {
+          "productId": "P066",
+          "name": "Xơ mướp giọt nước",
+          "qty": 40,
+          "price": 49000
+        },
+        {
+          "productId": "P069",
+          "name": "Bút tre khắc tên theo yêu cầu",
+          "qty": 60,
+          "price": 19000
+        },
+        {
+          "productId": "P070",
+          "name": "Bàn chải tre khắc tên",
+          "qty": 40,
+          "price": 25000
+        }
+      ],
+      "status": "processing",
+      "payment": "Công nợ đại lý",
+      "channel": "Đại lý/NPP toàn quốc",
+      "staff": "Mai Befine"
+    },
+    {
+      "id": "ĐH001250",
+      "date": "2026-07-07 15:10",
+      "customer": "Bùi Quốc Huy",
+      "phone": "0915000006",
+      "total": 548000,
+      "discount": 0,
+      "paid": 548000,
+      "items": [
+        {
+          "productId": "P064",
+          "name": "Máy khuếch tán tinh dầu 300ml",
+          "qty": 1,
+          "price": 359000
+        },
+        {
+          "productId": "P063",
+          "name": "Đèn xông tinh dầu cổ trứng",
+          "qty": 1,
+          "price": 189000
+        }
+      ],
+      "status": "shipping",
+      "payment": "COD",
+      "channel": "Shopee Befine Life",
+      "staff": "Hoàng Minh Đức"
+    }
+  ],
+  "inventoryLogs": [
+    {
+      "id": "IN001",
+      "date": "2026-07-06 09:00",
+      "type": "import",
+      "productId": "P001",
+      "product": "Tinh dầu sả chanh Befine 10ml",
+      "sku": "TD-SC-010",
+      "qty": 50,
+      "warehouse": "Kho Hà Đông",
+      "note": "Nhập từ NCC Thạch Thành",
+      "staff": "Lê Hoàng Nam"
+    },
+    {
+      "id": "IN002",
+      "date": "2026-07-06 11:55",
+      "type": "export",
+      "productId": "P008",
+      "product": "Bánh rong biển kẹp hạt 200g",
+      "sku": "BF-RB-200",
+      "qty": -8,
+      "warehouse": "Kho Online",
+      "note": "Xuất bán đơn ĐH001234",
+      "staff": "Trần Minh Khoa"
+    },
+    {
+      "id": "IN003",
+      "date": "2026-07-05 14:20",
+      "type": "adjust",
+      "productId": "P004",
+      "product": "Sáp giữ ấm Bekids 0M+ 20g",
+      "sku": "BK-SGA-020",
+      "qty": -3,
+      "warehouse": "Kho Online",
+      "note": "Điều chỉnh kiểm kê",
+      "staff": "Lê Hoàng Nam"
+    },
+    {
+      "id": "IN004",
+      "date": "2026-07-04 08:30",
+      "type": "import",
+      "productId": "P011",
+      "product": "Xơ mướp rửa bát oval",
+      "sku": "TC-XM-OVL",
+      "qty": 100,
+      "warehouse": "Kho Phố Vọng",
+      "note": "Nhập từ vườn BN",
+      "staff": "Lê Hoàng Nam"
+    },
+    {
+      "id": "IN005",
+      "date": "2026-07-03 17:00",
+      "type": "transfer",
+      "productId": "P010",
+      "product": "Đũa buông Bình Thuận 10 đôi",
+      "sku": "TC-DB-010",
+      "qty": 25,
+      "warehouse": "Kho Hà Đông → Kho Online",
+      "note": "Điều chuyển phục vụ đơn sàn",
+      "staff": "Mai Befine"
+    },
+    {
+      "id": "IN006",
+      "date": "2026-07-07 08:00",
+      "type": "import",
+      "productId": "P057",
+      "product": "Tinh dầu treo quất Befine 8ml",
+      "sku": "TREO-QUAT-008",
+      "qty": 80,
+      "warehouse": "Kho Online",
+      "note": "Nhập bổ sung cho kênh online",
+      "staff": "Lê Hoàng Nam"
+    },
+    {
+      "id": "IN007",
+      "date": "2026-07-07 08:20",
+      "type": "import",
+      "productId": "P065",
+      "product": "Xơ mướp găng tay tắm",
+      "sku": "XM-GTT-01",
+      "qty": 100,
+      "warehouse": "Kho Phố Vọng",
+      "note": "Nhập xưởng xơ mướp Bắc Ninh",
+      "staff": "Lê Hoàng Nam"
+    },
+    {
+      "id": "IN008",
+      "date": "2026-07-07 09:15",
+      "type": "export",
+      "productId": "P059",
+      "product": "Cốt gừng tràm Bekids 300ml",
+      "sku": "BK-CGT-300",
+      "qty": 15,
+      "warehouse": "Kho Online",
+      "note": "Xuất theo đơn ĐH001246",
+      "staff": "Hoàng Minh Đức"
+    },
+    {
+      "id": "IN009",
+      "date": "2026-07-07 10:06",
+      "type": "export",
+      "productId": "P008",
+      "product": "Bánh rong biển kẹp hạt 200g",
+      "sku": "BF-RB-200",
+      "qty": 1,
+      "warehouse": "Kho Online",
+      "note": "Xuất POS ĐH001247",
+      "staff": "Trần Minh Khoa"
+    },
+    {
+      "id": "IN010",
+      "date": "2026-07-07 12:00",
+      "type": "adjust",
+      "productId": "P005",
+      "product": "Toner tía tô Befine 100ml",
+      "sku": "SK-TTT-100",
+      "qty": 24,
+      "warehouse": "Kho Hà Đông",
+      "note": "Cập nhật lô sản xuất mới sau khi hết hàng",
+      "staff": "Lê Hoàng Nam"
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "id": "PN001",
+      "supplier": "Vườn nguyên liệu Thạch Thành",
+      "date": "2026-07-06",
+      "expectedDate": "2026-07-08",
+      "total": 12500000,
+      "paid": 5000000,
+      "status": "ordered",
+      "items": 6,
+      "staff": "Lê Hoàng Nam"
+    },
+    {
+      "id": "PN002",
+      "supplier": "Befine Foods Factory",
+      "date": "2026-07-04",
+      "expectedDate": "2026-07-05",
+      "total": 8200000,
+      "paid": 8200000,
+      "status": "received",
+      "items": 3,
+      "staff": "Mai Befine"
+    },
+    {
+      "id": "PN003",
+      "supplier": "Xưởng gỗ dừa Bến Tre",
+      "date": "2026-06-28",
+      "expectedDate": "2026-07-07",
+      "total": 8600000,
+      "paid": 0,
+      "status": "partial",
+      "items": 4,
+      "staff": "Lê Hoàng Nam"
+    },
+    {
+      "id": "PN004",
+      "supplier": "Cơ sở đũa buông Bình Thuận",
+      "date": "2026-06-25",
+      "expectedDate": "2026-06-30",
+      "total": 4600000,
+      "paid": 4600000,
+      "status": "received",
+      "items": 1,
+      "staff": "Lê Hoàng Nam"
+    },
+    {
+      "id": "PN005",
+      "supplier": "Xưởng xơ mướp Bắc Ninh",
+      "date": "2026-07-07",
+      "expectedDate": "2026-07-10",
+      "total": 9800000,
+      "paid": 3000000,
+      "status": "ordered",
+      "items": 4,
+      "staff": "Lê Hoàng Nam"
+    },
+    {
+      "id": "PN006",
+      "supplier": "Xưởng gốm đèn xông Bát Tràng",
+      "date": "2026-07-07",
+      "expectedDate": "2026-07-12",
+      "total": 7600000,
+      "paid": 0,
+      "status": "draft",
+      "items": 2,
+      "staff": "Đỗ Anh Tú"
+    }
+  ],
+  "returns": [
+    {
+      "id": "DT001",
+      "orderId": "ĐH001235",
+      "customer": "Trần Thị Bích",
+      "date": "2026-07-06",
+      "product": "Tinh dầu bạc hà Befine 10ml",
+      "qty": 1,
+      "amount": 95000,
+      "reason": "Khách đổi mùi",
+      "status": "pending"
+    },
+    {
+      "id": "DT002",
+      "orderId": "ĐH001238",
+      "customer": "Khách lẻ",
+      "date": "2026-07-05",
+      "product": "Bát gáo dừa decor 10-13cm",
+      "qty": 1,
+      "amount": 79000,
+      "reason": "Vỡ trong vận chuyển",
+      "status": "approved"
+    },
+    {
+      "id": "DT003",
+      "orderId": "ĐH001239",
+      "customer": "Vũ Thị Phương",
+      "date": "2026-07-04",
+      "product": "Xơ mướp rửa bát oval",
+      "qty": 5,
+      "amount": 95000,
+      "reason": "Giao thiếu",
+      "status": "refunded"
+    },
+    {
+      "id": "DT004",
+      "orderId": "ĐH001250",
+      "customer": "Bùi Quốc Huy",
+      "date": "2026-07-07",
+      "product": "Đèn xông tinh dầu cổ trứng",
+      "qty": 1,
+      "amount": 189000,
+      "reason": "Sứt mẻ khi vận chuyển",
+      "status": "approved"
+    },
+    {
+      "id": "DT005",
+      "orderId": "ĐH001245",
+      "customer": "Nguyễn Hồng Mai",
+      "date": "2026-07-07",
+      "product": "Tinh dầu treo mùi già Befine 8ml",
+      "qty": 1,
+      "amount": 79000,
+      "reason": "Đổi sang mùi cam",
+      "status": "pending"
+    }
+  ],
+  "promotions": [
+    {
+      "id": "KM001",
+      "name": "Combo sống xanh cuối tuần",
+      "code": "GREEN15",
+      "type": "percent",
+      "value": 15,
+      "appliesTo": "Thủ công xanh",
+      "start": "2026-07-01",
+      "end": "2026-07-14",
+      "used": 42,
+      "limit": 200,
+      "status": "active",
+      "channel": "Website Befine.vn"
+    },
+    {
+      "id": "KM002",
+      "name": "Mẹ & bé an tâm",
+      "code": "BEKIDS20",
+      "type": "percent",
+      "value": 20,
+      "appliesTo": "Mẹ & bé",
+      "start": "2026-07-03",
+      "end": "2026-07-10",
+      "used": 18,
+      "limit": 100,
+      "status": "active",
+      "channel": "Tất cả kênh"
+    },
+    {
+      "id": "KM003",
+      "name": "Miễn phí vận chuyển đơn từ 299K",
+      "code": "FREESHIP299",
+      "type": "shipping",
+      "value": 30000,
+      "appliesTo": "Website Befine.vn",
+      "start": "2026-06-25",
+      "end": "2026-07-25",
+      "used": 126,
+      "limit": 500,
+      "status": "active",
+      "channel": "Website Befine.vn"
+    },
+    {
+      "id": "KM004",
+      "name": "Sinh nhật cửa hàng",
+      "code": "BDAY50",
+      "type": "fixed",
+      "value": 50000,
+      "appliesTo": "Tất cả",
+      "start": "2026-06-01",
+      "end": "2026-06-30",
+      "used": 221,
+      "limit": 300,
+      "status": "expired",
+      "channel": "Website Befine.vn"
+    },
+    {
+      "id": "KM005",
+      "name": "BefineSaaS - freeship từ 200K",
+      "code": "BEFINESHIP",
+      "type": "shipping",
+      "value": 30000,
+      "appliesTo": "Website/Shopee/TikTok Shop",
+      "start": "2026-07-07",
+      "end": "2026-07-31",
+      "used": 8,
+      "limit": 500,
+      "status": "active",
+      "channel": "Website Befine.vn"
+    },
+    {
+      "id": "KM006",
+      "name": "Bánh hạt mật dừa nước - giảm 20%",
+      "code": "FOOD20",
+      "type": "percent",
+      "value": 20,
+      "appliesTo": "Befine Foods",
+      "start": "2026-07-07",
+      "end": "2026-07-15",
+      "used": 12,
+      "limit": 200,
+      "status": "active",
+      "channel": "Tất cả kênh"
+    }
+  ],
+  "cashbook": [
+    {
+      "id": "PT001",
+      "date": "2026-07-06 15:00",
+      "type": "receipt",
+      "category": "Thu bán hàng",
+      "amount": 486000,
+      "method": "Tiền mặt",
+      "ref": "ĐH001234",
+      "staff": "Trần Minh Khoa"
+    },
+    {
+      "id": "PT002",
+      "date": "2026-07-06 13:20",
+      "type": "receipt",
+      "category": "Thu chuyển khoản",
+      "amount": 374000,
+      "method": "Chuyển khoản",
+      "ref": "ĐH001235",
+      "staff": "Phạm Thùy Linh"
+    },
+    {
+      "id": "PC001",
+      "date": "2026-07-06 09:30",
+      "type": "payment",
+      "category": "Thanh toán nhập hàng",
+      "amount": 5000000,
+      "method": "Chuyển khoản",
+      "ref": "PN001",
+      "staff": "Mai Befine"
+    },
+    {
+      "id": "PC002",
+      "date": "2026-07-05 18:00",
+      "type": "payment",
+      "category": "Chi phí đóng gói",
+      "amount": 450000,
+      "method": "Tiền mặt",
+      "ref": "CP001",
+      "staff": "Lê Hoàng Nam"
+    },
+    {
+      "id": "PT005",
+      "date": "2026-07-07 10:10",
+      "type": "receipt",
+      "category": "Thu POS",
+      "amount": 188000,
+      "method": "Tiền mặt",
+      "ref": "ĐH001247",
+      "staff": "Trần Minh Khoa"
+    },
+    {
+      "id": "PT006",
+      "date": "2026-07-07 11:25",
+      "type": "receipt",
+      "category": "Thu Website",
+      "amount": 1600000,
+      "method": "Chuyển khoản",
+      "ref": "ĐH001248",
+      "staff": "Hoàng Minh Đức"
+    },
+    {
+      "id": "PC005",
+      "date": "2026-07-07 14:00",
+      "type": "payment",
+      "category": "Cọc NCC",
+      "amount": 3000000,
+      "method": "Chuyển khoản",
+      "ref": "PN005",
+      "staff": "Đỗ Anh Tú"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "CV001",
+      "title": "Duyệt 3 đơn online chờ đóng gói",
+      "due": "Hôm nay",
+      "priority": "high",
+      "owner": "Phạm Thùy Linh",
+      "status": "pending"
+    },
+    {
+      "id": "CV002",
+      "title": "Nhập lô tinh dầu sả chanh từ Thạch Thành",
+      "due": "08/07/2026",
+      "priority": "medium",
+      "owner": "Lê Hoàng Nam",
+      "status": "doing"
+    },
+    {
+      "id": "CV003",
+      "title": "Kiểm kê nhóm hàng thủ công xanh",
+      "due": "09/07/2026",
+      "priority": "medium",
+      "owner": "Lê Hoàng Nam",
+      "status": "pending"
+    },
+    {
+      "id": "CV004",
+      "title": "Gửi mã khuyến mãi cho khách VIP",
+      "due": "Tuần này",
+      "priority": "low",
+      "owner": "Mai Befine",
+      "status": "done"
+    },
+    {
+      "id": "TASK005",
+      "title": "Đồng bộ dữ liệu BefineSaaS lên MySQL",
+      "status": "done",
+      "owner": "Backend/DBA"
+    },
+    {
+      "id": "TASK006",
+      "title": "Rà soát bỏ H2, node_modules, cache test khỏi gói bàn giao",
+      "status": "done",
+      "owner": "PM"
+    },
+    {
+      "id": "TASK007",
+      "title": "Kiểm tra kênh Website/Shopee/TikTok Shop trong dữ liệu mẫu",
+      "status": "done",
+      "owner": "BA/Tester"
+    }
+  ],
+  "version": "BefineSaaS 10.0.0",
+  "updatedAt": "2026-07-15"
+}

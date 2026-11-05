@@ -1,0 +1,342 @@
+{
+  "sourceSite": "https://befine.vn",
+  "note": "Ảnh sản phẩm chính thức được đóng gói cục bộ từ befine.vn. BefineSaaS bổ sung ảnh chính thức và vẫn giữ thumbnail dự phòng cho sản phẩm chưa có đối sánh chính xác.",
+  "products": [
+    {
+      "id": "P001",
+      "name": "Tinh dầu sả chanh Befine 10ml",
+      "localPath": "/uploads/products/seed/P001.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-sa-chanh-10ml-copy.jpg?v=1696244567897"
+    },
+    {
+      "id": "P002",
+      "name": "Tinh dầu bạc hà Befine 10ml",
+      "localPath": "/uploads/products/seed/P002.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-bac-ha-10ml-copy.jpg?v=1696244368087"
+    },
+    {
+      "id": "P003",
+      "name": "Tinh dầu tràm gió Bekids 30ml",
+      "localPath": "/uploads/products/seed/P003.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/100/384/551/products/tinh-dau-tram-10ml-copy.jpg?v=1696244303893"
+    },
+    {
+      "id": "P004",
+      "name": "Sáp giữ ấm Bekids 0M+ 20g",
+      "localPath": "/uploads/products/seed/P004.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/100/384/551/products/sap-giu-am-moi-khong-nen.jpg?v=1762237870013"
+    },
+    {
+      "id": "P005",
+      "name": "Toner tía tô Befine 100ml",
+      "localPath": "/uploads/products/seed/P005.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/nuoc-cat-tia-to-copy.jpg?v=1696244029903"
+    },
+    {
+      "id": "P006",
+      "name": "Dầu dừa phân đoạn Befine 100ml",
+      "localPath": "/uploads/products/seed/P006.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/dau-dua-phan-doan100ml-chinh-hang.jpg?v=1777185034730"
+    },
+    {
+      "id": "P007",
+      "name": "Xà bông gừng quế Befine Green",
+      "localPath": "/uploads/products/seed/P007.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/xa-bong-gung-que-0567a589-aa40-4d8c-8dba-857e585c01a3.jpg?v=1777182193810"
+    },
+    {
+      "id": "P008",
+      "name": "Bánh rong biển kẹp hạt 200g",
+      "localPath": "/uploads/products/seed/P008.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/kep-rong-bien-3.jpg?v=1777282674917"
+    },
+    {
+      "id": "P009",
+      "name": "Gạo lứt chà bông Befine 200g",
+      "localPath": "/uploads/products/seed/P009.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/cha-bong-5.jpg?v=1777282744657"
+    },
+    {
+      "id": "P013",
+      "name": "Tinh dầu gừng Befine 10ml",
+      "localPath": "/uploads/products/seed/P013.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-gung-10ml-ee39340b-ca43-4c78-88ab-efed974137d9.jpg?v=1696244094887"
+    },
+    {
+      "id": "P014",
+      "name": "Tinh dầu khuynh diệp Befine 10ml",
+      "localPath": "/uploads/products/seed/P014.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-khuynh-diep-10ml-copy.jpg?v=1696244264763"
+    },
+    {
+      "id": "P015",
+      "name": "Tinh dầu ngọc am Befine 10ml",
+      "localPath": "/uploads/products/seed/P015.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-ngoc-am-10ml-copy.jpg?v=1696244461443"
+    },
+    {
+      "id": "P016",
+      "name": "Tinh dầu cam ngọt Befine 10ml",
+      "localPath": "/uploads/products/seed/P016.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-cam-10ml-copy.jpg?v=1696244445517"
+    },
+    {
+      "id": "P017",
+      "name": "Tinh dầu quýt Befine 10ml",
+      "localPath": "/uploads/products/seed/P017.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-quyt-10ml-copy.jpg?v=1696244212730"
+    },
+    {
+      "id": "P018",
+      "name": "Tinh dầu bưởi Befine 10ml",
+      "localPath": "/uploads/products/seed/P018.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-buoi-10ml-copy.jpg?v=1696244594063"
+    },
+    {
+      "id": "P019",
+      "name": "Tinh dầu sả Java Befine 10ml",
+      "localPath": "/uploads/products/seed/P019.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-sa-java-10ml-copy.jpg?v=1696244344667"
+    },
+    {
+      "id": "P020",
+      "name": "Tinh dầu quế Befine 10ml",
+      "localPath": "/uploads/products/seed/P020.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-que-10ml-copy.jpg?v=1696244513547"
+    },
+    {
+      "id": "P021",
+      "name": "Tinh dầu mùi già Befine 10ml",
+      "localPath": "/uploads/products/seed/P021.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-mui-gia-10ml-copy.jpg?v=1696244475083"
+    },
+    {
+      "id": "P022",
+      "name": "Granola bơ đậu phộng Befine 300g",
+      "localPath": "/uploads/products/seed/P022.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/gran.jpg?v=1777282911633"
+    },
+    {
+      "id": "P023",
+      "name": "Bánh thuyền mix hạt Befine 180g",
+      "localPath": "/uploads/products/seed/P023.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/thuyen.jpg?v=1777282870293"
+    },
+    {
+      "id": "P025",
+      "name": "Toner trầu không Befine 100ml",
+      "localPath": "/uploads/products/seed/P025.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/nuoc-cat-trau-khong-df3ace24-25da-4a70-a15c-4dc64f40cc41.jpg?v=1696244062430"
+    },
+    {
+      "id": "P026",
+      "name": "Nước súc miệng thảo dược Befine 300ml",
+      "localPath": "/uploads/products/seed/P026.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/nuoc-suc-mieng-thao-duoc-copy.jpg?v=1696243291587"
+    },
+    {
+      "id": "P027",
+      "name": "Xà bông sả chanh Befine Green",
+      "localPath": "/uploads/products/seed/P027.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/bo-7-loai-1db687e7-d6d0-4962-a25c-8b0f15901f19.jpg?v=1777182267613"
+    },
+    {
+      "id": "P031",
+      "name": "Tinh dầu tràm Befine 10ml",
+      "localPath": "/uploads/products/seed/P031.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/100/384/551/products/tinh-dau-tram-10ml-copy.jpg?v=1696244303893"
+    },
+    {
+      "id": "P032",
+      "name": "Tinh dầu Cold & Flu Befine 10ml",
+      "localPath": "/uploads/products/seed/P032.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-la-xong.jpg?v=1660553781797"
+    },
+    {
+      "id": "P033",
+      "name": "Tinh dầu quất Befine 10ml",
+      "localPath": "/uploads/products/seed/P033.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-quat-10ml-copy.jpg?v=1696244413430"
+    },
+    {
+      "id": "P034",
+      "name": "Tinh dầu hương nhu Befine 10ml",
+      "localPath": "/uploads/products/seed/P034.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-huong-nhu-10ml-copy.jpg?v=1696244497417"
+    },
+    {
+      "id": "P035",
+      "name": "Tinh dầu hoa ngũ sắc Befine 10ml",
+      "localPath": "/uploads/products/seed/P035.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-hoa-ngu-sac-10ml-copy.jpg?v=1696243862103"
+    },
+    {
+      "id": "P036",
+      "name": "Tinh dầu treo xe sả chanh Befine 5ml",
+      "localPath": "/uploads/products/seed/P036.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-sa-chanh-treo-xe-d7cd867b-fee4-44d2-a3ac-914ad278937f.jpg?v=1696242782257"
+    },
+    {
+      "id": "P037",
+      "name": "Tinh dầu treo xe cam Befine 5ml",
+      "localPath": "/uploads/products/seed/P037.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-cam-treo-xe-copy.jpg?v=1696242855703"
+    },
+    {
+      "id": "P038",
+      "name": "Tinh dầu treo xe bạc hà Befine 5ml",
+      "localPath": "/uploads/products/seed/P038.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-bac-ha-treo-xe-copy.jpg?v=1696242913393"
+    },
+    {
+      "id": "P039",
+      "name": "Cốt gừng tràm Bekids 300ml",
+      "localPath": "/uploads/products/seed/P039.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/z7487530397157-3bf5080231e1793157223bb5e0e8a8aa.jpg?v=1769858323073"
+    },
+    {
+      "id": "P040",
+      "name": "Lăn tinh dầu đuổi muỗi Bekids 10ml",
+      "localPath": "/uploads/products/seed/P040.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/lan-duoie-muoi.jpg?v=1701153424477"
+    },
+    {
+      "id": "P041",
+      "name": "Dầu tràm xoa Bekids 30ml",
+      "localPath": "/uploads/products/seed/P041.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/dau-tram-xoa.jpg?v=1764663683067"
+    },
+    {
+      "id": "P042",
+      "name": "Nước tắm mùi già Befine 300ml",
+      "localPath": "/uploads/products/seed/P042.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/ntmg.jpg?v=1769858107940"
+    },
+    {
+      "id": "P044",
+      "name": "Xà bông than tre Befine Green",
+      "localPath": "/uploads/products/seed/P044.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/xa-bong-than-tre-d0cb0db0-4b24-4210-9d6d-219bf58eba3f.jpg?v=1777181702150"
+    },
+    {
+      "id": "P045",
+      "name": "Xà bông cam nghệ Befine Green",
+      "localPath": "/uploads/products/seed/P045.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/xb-cam-nghe.jpg?v=1777182062730"
+    },
+    {
+      "id": "P046",
+      "name": "Xà bông trầu không Befine Green",
+      "localPath": "/uploads/products/seed/P046.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/xa-bong-trau-khong-5e99c223-6021-4770-b254-ff8ec39a3872.jpg?v=1777182234820"
+    },
+    {
+      "id": "P047",
+      "name": "Xà bông mướp đắng Befine Green",
+      "localPath": "/uploads/products/seed/P047.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/xb-muop-dang-f8804253-0011-47e0-9383-45569d5924b4.jpg?v=1777181555097"
+    },
+    {
+      "id": "P053",
+      "name": "Tinh dầu Cold&Flu Befine 10ml",
+      "localPath": "/uploads/products/seed/P053.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-la-xong.jpg?v=1660553781797"
+    },
+    {
+      "id": "P054",
+      "name": "Tinh dầu hương nhu Befine 10ml",
+      "localPath": "/uploads/products/seed/P054.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-huong-nhu-10ml-copy.jpg?v=1696244497417"
+    },
+    {
+      "id": "P055",
+      "name": "Tinh dầu hoa ngũ sắc Befine 10ml",
+      "localPath": "/uploads/products/seed/P055.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-hoa-ngu-sac-10ml-copy.jpg?v=1696243862103"
+    },
+    {
+      "id": "P056",
+      "name": "Tinh dầu ngải cứu Befine 5ml",
+      "localPath": "/uploads/products/seed/P056.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-ngai-cuu.jpg?v=1693620876037"
+    },
+    {
+      "id": "P057",
+      "name": "Tinh dầu treo quất Befine 8ml",
+      "localPath": "/uploads/products/seed/P057.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-quyt-treo-xe-copy.jpg?v=1696242897687"
+    },
+    {
+      "id": "P058",
+      "name": "Tinh dầu treo mùi già Befine 8ml",
+      "localPath": "/uploads/products/seed/P058.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-mui-gia-treo-xe-copy.jpg?v=1696242922773"
+    },
+    {
+      "id": "P059",
+      "name": "Cốt gừng tràm Bekids 300ml",
+      "localPath": "/uploads/products/seed/P059.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/z7487530397157-3bf5080231e1793157223bb5e0e8a8aa.jpg?v=1769858323073"
+    },
+    {
+      "id": "P060",
+      "name": "Cốt gừng tràm Bekids 500ml",
+      "localPath": "/uploads/products/seed/P060.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/z7487530397157-3bf5080231e1793157223bb5e0e8a8aa.jpg?v=1769858323073"
+    },
+    {
+      "id": "P061",
+      "name": "Nước tắm mùi già Befine 500ml",
+      "localPath": "/uploads/products/seed/P061.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/ntmg.jpg?v=1769858107940"
+    },
+    {
+      "id": "P062",
+      "name": "Nước súc miệng thảo dược Befine 300ml",
+      "localPath": "/uploads/products/seed/P062.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/nuoc-suc-mieng-thao-duoc-copy.jpg?v=1696243291587"
+    },
+    {
+      "id": "P063",
+      "name": "Đèn xông tinh dầu cổ trứng",
+      "localPath": "/uploads/products/seed/P063.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/den-xong-tinh-dau-co-to-copy.jpg?v=1765636185293"
+    },
+    {
+      "id": "P064",
+      "name": "Máy khuếch tán tinh dầu 300ml",
+      "localPath": "/uploads/products/seed/P064.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/may-khuech-tan-lo-hoa-vang.jpg?v=1776245110907"
+    },
+    {
+      "id": "P073",
+      "name": "Tinh dầu xịt đuổi muỗi Bekids 50ml",
+      "localPath": "/uploads/products/seed/P073.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/xit-muoi-50ml.jpg?v=1775624130180"
+    },
+    {
+      "id": "P074",
+      "name": "Combo 7 loại xà bông Befine Green 100g",
+      "localPath": "/uploads/products/seed/P074.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/bo-7-loai.jpg?v=1777180864530"
+    },
+    {
+      "id": "P075",
+      "name": "Xà bông tía tô Befine Green 100g",
+      "localPath": "/uploads/products/seed/P075.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/xa-bong-tia-to-1-14c41674-7727-4a3f-afc2-98e14303cbf7.jpg?v=1777182113357"
+    },
+    {
+      "id": "P076",
+      "name": "Tinh dầu sả Java treo xe ô tô 8ml",
+      "localPath": "/uploads/products/seed/P076.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/tinh-dau-sa-java-treo-xe.jpg?v=1764840606473"
+    },
+    {
+      "id": "P077",
+      "name": "Dầu tràm xoa Bekids 10ml",
+      "localPath": "/uploads/products/seed/P077.jpg",
+      "sourceUrl": "https://bizweb.dktcdn.net/thumb/1024x1024/100/384/551/products/dau-tram-xoa.jpg?v=1764663683067"
+    }
+  ]
+}
